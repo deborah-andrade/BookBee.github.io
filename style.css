@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=EB+Garamond:ital,wght@0,400;1,700&family=Merriweather:ital,wght@1,300&family=Noto+Emoji:wght@300&family=Playfair+Display:ital@1&family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Belleza;
+}
+
+.ajuste{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.titulo{
+    color: #BB86FC;
+    font-size: 80px;
+    margin-top: -48px;
+    text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
+
+}
+.emcima{
+    width: 450px; /* Defina a largura do container conforme necessário */
+    word-wrap: break-word;
+    position: absolute;
+    top: 44%;
+    left: 15%;
+    transform: translate(-21%, -50%);
+    text-align: center;
+    color: #fff; /* ou defina a cor de texto desejada */
+    font-size: 47px; /* ou defina o tamanho de fonte desejado */
+    padding: 10px;
+}
+
+.img img{
+    width: 117%;
+}
+
+.login{
+    margin-left: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative; top: -340px;
+}
+
+.login input{
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 300px;
+    font-size: 13px;
+}
+
+.cadastro ul{
+    list-style-type: none;
+}
+
+.cadastro{
+    margin-left: 780px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: relative; top: -366px;
+    font-size: 12px;
+}
+
+.cadastro a{
+    text-decoration: none;
+}
+
+.cadastro a:hover{
+    text-decoration: underline;
+}
+
+
