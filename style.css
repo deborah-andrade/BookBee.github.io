@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Belleza;
+    height: 100%;
 }
 
 .ajuste{
@@ -46,11 +47,30 @@ body{
     position: relative; top: -340px;
 }
 
+.login label{
+    margin-left: 4%;
+    margin-bottom: 6px;
+    font-size: 15px;
+
+}
+
+
 .login input{
     margin-bottom: 20px;
     padding: 12px;
     width: 300px;
-    font-size: 13px;
+    font-size: 12px;
+    outline: 0;
+    border-radius: 10000px;
+
+}
+
+.login i{
+    font-size: 20px;
+    cursor: pointer;
+    color: #8d99ae;
+    position: relative; top: -52px;
+    margin-left: 148%;
 }
 
 .cadastro ul{
@@ -62,7 +82,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 250px;
-    position: relative; top: -366px;
+    position: relative; top: -385px;
     font-size: 12px;
 }
 

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
         
         <title>Tela de Inicio</title>
@@ -24,9 +25,16 @@
             </div>
         
             <div class="login">
-                    <input type="text" placeholder="E-mail">
-                    <input type="text" placeholder="Senha" >
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" placeholder="Insira seu E-mail">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Insira sua Senha" >
+                    <i class="bi bi-eye-fill" id="botao-senha" onclick="mostrarSenha()"></i>
             </div>
+
+            <script src="main.js"></script>
+
             <div class="cadastro">
                 <ul>
                     <li>Não possui uma conta?    <a href="#">Cadastre-se</a></li>
