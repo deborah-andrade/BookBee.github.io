@@ -30,6 +30,8 @@ body{
     color: #fff; /* ou defina a cor de texto desejada */
     font-size: 47px; /* ou defina o tamanho de fonte desejado */
     padding: 10px;
+    text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
+
 }
 
 .img img{
@@ -72,4 +74,14 @@ body{
     text-decoration: underline;
 }
 
-
+.botao input{
+    margin-left: 910px;
+    position: relative; top: -350px;
+    border: none;
+    padding: 12px;
+    width: 130px;
+    background-color: #7F39FB;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 16px;
+}
