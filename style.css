@@ -122,6 +122,9 @@ input::placeholder {
     font-size: 47px;
     text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
     font-family: belleza;
+    position: relative; bottom: 30px;
+
+
 }
 
 .cadastro {
@@ -129,7 +132,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     width: 200px;
-    position: relative; top: -425px;
+    position: relative; top: -440px;
 }
 
 .cadastro label{
@@ -152,7 +155,7 @@ input::placeholder {
 
 .botao01 input{
     margin-left: 910px;
-    position: relative; top: -410px;
+    position: relative; top: -440px;
     border: none;
     padding: 12px;
     width: 130px;
@@ -160,4 +163,26 @@ input::placeholder {
     color: #fff;
     border-radius: 7px;
     font-size: 16px;
+}
+
+.login01{
+    color: #AAAAAA;
+    margin-left: 784px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative; top: -460px;
+    font-size: 12px;
+}
+
+.login01 ul{
+    list-style-type: none;
+}
+
+.login01 a{
+    text-decoration: none;
+}
+
+.login01 a:hover{
+    text-decoration: underline;
 }
