@@ -7,6 +7,7 @@ body{
     height: 100%;
 }
 
+
 .ajuste{
     display: flex;
     justify-content: space-around;
@@ -54,7 +55,6 @@ body{
 
 }
 
-
 .login input{
     margin-bottom: 20px;
     padding: 12px;
@@ -68,16 +68,16 @@ body{
 .login i{
     font-size: 20px;
     cursor: pointer;
-    color: #8d99ae;
+    color: #000;
     position: relative; top: -52px;
     margin-left: 148%;
 }
 
-.cadastro ul{
+.cadastre ul{
     list-style-type: none;
 }
 
-.cadastro{
+.cadastre{
     margin-left: 780px;
     display: flex;
     flex-direction: column;
@@ -86,17 +86,60 @@ body{
     font-size: 12px;
 }
 
-.cadastro a{
+.cadastre a{
     text-decoration: none;
 }
 
-.cadastro a:hover{
+.cadastre a:hover{
     text-decoration: underline;
 }
 
 .botao input{
     margin-left: 910px;
-    position: relative; top: -350px;
+    position: relative; top: -360px;
+    border: none;
+    padding: 12px;
+    width: 130px;
+    background-color: #7F39FB;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.titulo01{
+    color: #BB86FC;
+    font-size: 80px;
+    margin-top: -90px;
+    text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.cadastro {
+    margin-left: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative; top: -400px;
+}
+
+.cadastro label{
+    margin-left: 4%;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.cadastro input{
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 300px;
+    font-size: 12px;
+    outline: 0;
+    border-radius: 10000px;
+}
+
+.botao01 input{
+    margin-left: 910px;
+    position: relative; top: -380px;
     border: none;
     padding: 12px;
     width: 130px;
