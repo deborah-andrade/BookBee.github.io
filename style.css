@@ -20,7 +20,7 @@ body{
     font-size: 160px;
     margin-left: 20px;
     margin-top: -100px;
-    text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
     font-family: Belleza;
 }
 .emcima{
@@ -53,7 +53,6 @@ body{
 
 .login label{
     margin-left: 5%;
-    margin-bottom: 6px;
     font-size: 15px;
     font-weight: 900;
     color: #7F39FB;
@@ -121,7 +120,7 @@ input::placeholder {
 .titulo01{
     color: #BB86FC;
     font-size: 90px;
-    text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
     font-family: belleza;
     position: relative; bottom: 40px;
 
@@ -185,4 +184,47 @@ input::placeholder {
 
 .login01 a:hover{
     text-decoration: underline;
+}
+
+.img01 img{
+    width: 949px; 
+    margin-left: 400px;
+}
+
+.titulo02{
+    position: relative; top: -320px;
+    margin-left: 43px;
+    font-size: 65px;
+    font-family: belleza;
+    color: #BB86FC;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.menu-titulo{
+    position: relative; bottom: 340px;
+    font-size: 21px;
+    color: #7F39FB;
+    font-weight: 800;
+    margin-left: 85px;
+}
+
+
+.menu ul li{
+    font-size: 15px;
+    position: relative; bottom: 340px;
+    margin-left: px;
+    list-style-type: none;
+    margin-top: 25px;
+    font-weight: 800;
+    color: #7F39FB;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.barra-pesquisa{
+    
 }
