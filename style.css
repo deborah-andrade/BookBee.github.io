@@ -83,7 +83,7 @@ input::placeholder {
 }
 
 .cadastre{
-    color: #AAAAAA;
+    color: #6c757d;
     margin-left: 784px;
     display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@ input::placeholder {
 }
 
 .login01{
-    color: #AAAAAA;
+    color: #6c757d;
     margin-left: 784px;
     display: flex;
     flex-direction: column;
@@ -203,8 +203,8 @@ input::placeholder {
 
 
 .menu-titulo{
-    position: relative; bottom: 340px;
-    font-size: 21px;
+    position: relative; bottom: 330px;
+    font-size: 26px;
     color: #7F39FB;
     font-weight: 800;
     margin-left: 85px;
@@ -212,19 +212,50 @@ input::placeholder {
 
 
 .menu ul li{
-    font-size: 15px;
+    font-size: 20px;
     position: relative; bottom: 340px;
-    margin-left: px;
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 45px;
     font-weight: 800;
     color: #7F39FB;
+}
+
+.menu li i{
+    font-size: 30px;
 }
 
 .menu a{
     text-decoration: none;
 }
 
-.barra-pesquisa{
-    
+
+.barra-pesquisa h1{
+    position: relative; bottom: 950px;
+    margin-left: 446px;
+    font-size: 40px;
+    color: #D9D9D9;
+}
+
+.barra-pesquisa input{
+    position: relative; bottom: 950px;
+    margin-left: 440px;
+    border: none;
+    padding: 12px;
+    width: 350px;
+    background-color: #fff;
+    color: #6c757d;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+hr{
+    width: 11%; 
+    margin-right: 85%;
+    position: relative; bottom: 330px;
+}
+
+.logo img{
+    width: 15%; 
+    position: relative; bottom: 460px;
+    margin-left: 40px;
 }
