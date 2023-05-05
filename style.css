@@ -201,7 +201,9 @@ input::placeholder {
     margin: 0;
 }
 
-
+.bookbeeTP p{
+    margin-bottom: 20px;
+}
 
 .menu-titulo{
     font-size: 21px;
@@ -211,13 +213,11 @@ input::placeholder {
 }
 
 
-
-
 /* tela principal - style do header  */
 
 .headerTP {
     width: 1536px;
-    height: 230px;
+    height: 190px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,12 +296,22 @@ input::placeholder {
     color: #D9D9D9;
 }
 
+.mainTelaPrincipal{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 560px 200px 200px;
+    grid-template-areas: 
+        "menuside lidosRecentes"
+        "metaDeLeitura metaDeLeitura"
+        "metaDeLeitura metaDeLeitura";
+}
+.menu{
+    grid-area: menuside;
+}
 .menu ul li{
-    font-size: 20px;
-    position: relative; bottom: 340px;
-    list-style-type: none;
-    margin-top: 45px;
-    font-weight: 800;
+    font-size: 28px;
+    margin-top: 25px;
     color: #7F39FB;
 }
 
@@ -309,34 +319,93 @@ input::placeholder {
     font-size: 30px;
 }
 
-
-/* .barra-pesquisa h1{
-    position: relative; bottom: 950px;
-    margin-left: 446px;
-    font-size: 40px;
-    color: #D9D9D9;
-}
-
-.barra-pesquisa input{
-    position: relative; bottom: 950px;
-    margin-left: 440px;
-    border: none;
-    padding: 12px;
-    width: 350px;
-    background-color: #fff;
-    color: #6c757d;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-hr{
-    width: 11%; 
-    margin-right: 85%;
-    position: relative; bottom: 330px;
+.logo{
+    display: flex;
 }
 
 .logo img{
-    width: 15%; 
-    position: relative; bottom: 460px;
-    margin-left: 40px;
-} */
+    width: 180px; 
+    margin-left: 35px;
+}
+
+hr{
+    width: 50%; 
+    margin-left: 10%;
+}
+
+.lidosRecentes{
+    grid-area: lidosRecentes;
+    margin-top: 50px;
+   
+}
+.tituloLidosRecentes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+.tituloLidosRecentes h3{
+    font-size: 35px;
+    color: #7F39FB;
+}
+
+.tituloLidosRecentes a{
+    font-size: 20px;
+    color: #7F39FB;
+    font-weight: bold;
+    width: 100px;
+}
+
+.estilizacao{
+    display: flex;
+    width: 900px;
+    list-style: none;
+    padding: 0;
+    margin-left: 150px;
+}
+
+.estilizacao li{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.estilizacao li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    transition: .5s;
+}
+
+.informacaoLivro{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    background-color: #362D60;
+    color: white;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.informacaoLivro p {
+    margin: 0 10px 5px 10px;
+}
+
+.estilizacao li:hover img{
+    margin-top: -60px;
+    margin-right: 60px;
+}
+
+.meta{
+    grid-area: metaDeLeitura;
+    background-color: #362D60;
+   
+}
