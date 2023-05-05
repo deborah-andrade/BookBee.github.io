@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=EB+Garamond:ital,wght@0,400;1,700&family=Inter:wght@200;300&family=Merriweather:ital,wght@1,300&family=Noto+Emoji:wght@300&family=Playfair+Display:ital@1&family=Poppins&display=swap');
 
+*{
+    font-family: Abhaya Libre ExtraBold;
+    text-decoration: none;
+    list-style-type: none;
+}
 
 body{
     margin: 0;
     padding: 0;
-    font-family:Abhaya Libre ExtraBold;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+main{
+    height: 560.40px;
+    margin-top: 50px;
 }
 
 
@@ -23,6 +32,7 @@ body{
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
     font-family: Belleza;
 }
+
 .emcima{
     font-family: Inter;
     width: 450px; /* Defina a largura do container conforme necessário */
@@ -70,6 +80,10 @@ body{
 
 }
 
+.login #senha{
+    margin-bottom: 0px;
+}
+
 input::placeholder {
     color: #D9D9D9;
 }
@@ -78,26 +92,19 @@ input::placeholder {
     font-size: 20px;
     cursor: pointer;
     color: #000;
-    position: relative; top: -52px;
+    position: relative; top: -35px;
     margin-left: 148%;
 }
 
 .cadastre{
     color: #6c757d;
-    margin-left: 784px;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    position: relative; top: -410px;
     font-size: 12px;
 }
 
 .cadastre ul{
-    list-style-type: none;
-}
-
-.cadastre a{
-    text-decoration: none;
+    padding: 0;
 }
 
 .cadastre a:hover{
@@ -106,8 +113,7 @@ input::placeholder {
 
 
 .botao input{
-    margin-left: 910px;
-    position: relative; top: -390px;
+    margin-left: 90px;
     border: none;
     padding: 12px;
     width: 130px;
@@ -153,10 +159,8 @@ input::placeholder {
 }
 
 .botao01 input{
-    margin-left: 910px;
-    position: relative; top: -440px;
+    margin-left: 95px;
     border: none;
-    padding: 12px;
     width: 130px;
     background-color: #7F39FB;
     color: #fff;
@@ -166,22 +170,14 @@ input::placeholder {
 
 .login01{
     color: #6c757d;
-    margin-left: 784px;
     display: flex;
-    flex-direction: column;
     width: 300px;
-    position: relative; top: -460px;
     font-size: 12px;
 }
-
-.login01 ul{
-    list-style-type: none;
+.login01 ul {
+    padding: 0;
+    margin-block: 0 20px;
 }
-
-.login01 a{
-    text-decoration: none;
-}
-
 .login01 a:hover{
     text-decoration: underline;
 }
@@ -191,25 +187,114 @@ input::placeholder {
     margin-left: 400px;
 }
 
-.titulo02{
-    position: relative; top: -320px;
-    margin-left: 43px;
+.bookbeeTP{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
     font-size: 65px;
     font-family: belleza;
     color: #BB86FC;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
+.bookbeeTP{
+    margin: 0;
+}
+
 
 
 .menu-titulo{
-    position: relative; bottom: 330px;
-    font-size: 26px;
+    font-size: 21px;
     color: #7F39FB;
     font-weight: 800;
-    margin-left: 85px;
+    margin-left: 35px;
 }
 
+
+
+
+/* tela principal - style do header  */
+
+.headerTP {
+    width: 1536px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicioeUser {
+    background-color: #BB86FC;
+    width: 1240px;
+    height: 246px;
+    border-radius: 0 0 0 96px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inicioEBusca h1{
+    color: #D9D9D9;
+    margin: 45px 15px;
+}
+
+.barraDeBusca{
+    width: 355px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-flex;
+    padding: auto;
+    align-items: center;
+}
+
+.barraDeBusca .iconeBusca{
+    margin-left: 3px;
+}
+
+.barraDeBusca input{
+    width: 15vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+
+    text-align: center;
+}
+
+.barraDeBusca input[type='text']::placeholder{
+    color:rgba(163, 95, 212, 45%);
+    font-size: 15px;
+}
+
+.barraDeBusca button{
+    width: 90px;
+    height: 50px;
+    background-color: #7F39FB;
+    border: 1px solid white;
+    border-radius: 15px;
+
+    text-align: center;
+    font-size: 15px;
+}
+
+.barraDeBusca button a{
+    color: #D9D9D9;
+}
+
+.nomeUser{
+    width: 220px;
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nomeUser a{
+    color: #D9D9D9;
+}
 
 .menu ul li{
     font-size: 20px;
@@ -224,12 +309,8 @@ input::placeholder {
     font-size: 30px;
 }
 
-.menu a{
-    text-decoration: none;
-}
 
-
-.barra-pesquisa h1{
+/* .barra-pesquisa h1{
     position: relative; bottom: 950px;
     margin-left: 446px;
     font-size: 40px;
@@ -258,4 +339,4 @@ hr{
     width: 15%; 
     position: relative; bottom: 460px;
     margin-left: 40px;
-}
+} */

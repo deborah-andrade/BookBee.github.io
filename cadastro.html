@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+    <script src="inicial.js"></script>
     <title>cadastro</title>
 </head>
 <body>
@@ -15,44 +17,41 @@
                 <div class="emcima">
                     <p id="texto"></p>
                 </div>
-                <script src="dom.js"></script>
-        </div> 
-        <div class="titulo01">
-            <p>Criar Nova Conta</p>
-         </div>
+                <script src="js/dom.js"></script>
+            </div> 
+            <div class="titulo01">
+                <p>Criar Nova Conta</p>
+            </div>
         </div>
-
+        
         <div class="cadastro">
             <form action="">
                 <label for="Nome">Nome</label>
                 <input type="text" id="nome" placeholder="Digite seu Nome" >
-        
+                
                 <label for="E-mail">E-mail</label>
                 <input type="text" id="email" placeholder="Insira seu E-mail">
-        
+                
                 <label for="Nickname">Nome de Usuário</label>
                 <input type="text" id="Nickname" placeholder="Digite um nome de Usuário">
-        
+                
                 <label for="senha">Senha</label>
                 <input type="text" id="senha" placeholder="Insira sua Senha" >
+                <div class="login01">
+                    <ul>
+                        <li>Já cadastrado? <a href="index.html">Faça seu Login!</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div class="botao01">
+                    <input type="submit" value="Cadastrar" id="botao-login">
+                </div>
+                
             </form>
         </div>
-
-    <div class="login01">
-        <ul>
-            <li>Já cadastrado? <a href="index.html">Faça seu Login!</a></li>
-        </ul>
-    </div>
-    <script src="main.js"></script>
-
-     
-    <div class="botao01">
-        <form action="">
-          <input type="submit" value="Cadastrar" id="botao-login">
-        </form>
-      </div>
-    
-    <script src="inicial.js"></script>
+        
+        
 
     </main>
 </body>
