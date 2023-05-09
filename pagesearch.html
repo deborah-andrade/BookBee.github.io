@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     
-    
-    <title>BookBee</title>
+    <title>Document</title>
 </head>
 <body>
     <header class="headerTP">
@@ -24,13 +23,13 @@
             <div class="inicioEBusca">
                 <h1>Inicío</h1>
 
-                <form >
-                    <div class="barraDeBusca">
-                        <div class="iconeBusca">
-                            <i class="bi bi-search"></i>
-                        </div>
-                        <input type="text" id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
-                        <button id="search" type="button">
+                <form class="search">
+                <div class="barraDeBusca">
+                    <div class="iconeBusca">
+                        <i class="bi bi-search"></i>
+                    </div>
+                        <input type="text" required id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
+                        <button id="search" type="button" >
                            Buscar
                         </button>
                     </div>
@@ -48,7 +47,7 @@
         </div>
 
     </header>
-    
+
     <main class="mainTelaPrincipal">
         <div class="menu">
             <ul>
@@ -86,7 +85,7 @@
                     <span class="txt">Citações</span>
                 </a></li>
                 
-                <li><a href="index.html">
+                <li><a href="#">
                     <span class="icon">
                         <i class="bi bi-box-arrow-left"></i>
                     </span>
@@ -98,49 +97,13 @@
                 <img src="imagens/1682512674678.png" alt="logo do bookbee">
             </div>
         </div>
+        
+        <div class="resultadoPesquisa">
+            <ul id="livros" class="resultGrid">
 
-        <div class="lidosRecentes">
-            <div class="tituloLidosRecentes">
-                <h3>Lidos Recentes</h3>
-                <a href="#">Todos <i class="bi bi-plus-lg"></i></a>
-            </div>
-            <ul class="estilizacao">
-                <li>
-                    <img src="imagens/A biblioteca da meia-noite.jpeg" alt="">
-                    <div class="informacaoLivro">
-                        <p class="paginasLidas"> <i class="bi bi-speedometer2"></i> 04/245</p>
-                        <p class="nomeLivro">A biblioteca da meia-noite</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="imagens/A biblioteca da meia-noite.jpeg" alt="">
-                    <div class="informacaoLivro">
-                        <p class="paginasLidas"><i class="bi bi-speedometer2"></i> 04/245</p>
-                        <p class="nomeLivro">A biblioteca da meia-noite</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="imagens/A biblioteca da meia-noite.jpeg" alt="">
-                    <div class="informacaoLivro">
-                        <p class="paginasLidas"> <i class="bi bi-speedometer2"></i> 04/245</p>
-                        <p class="nomeLivro">A biblioteca da meia-noite</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="imagens/A biblioteca da meia-noite.jpeg" alt="">
-                    <div class="informacaoLivro">
-                        <p class="paginasLidas"> <i class="bi bi-speedometer2"></i> 04/245</p>
-                        <p class="nomeLivro">A biblioteca da meia-noite</p>
-                    </div>
-                </li>
             </ul>
         </div>
-
-        <div class="metaDeLeitura">
-           
-        </div>
-
+            <script src="js/script.js"></script>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>
