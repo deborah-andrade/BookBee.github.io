@@ -11,9 +11,9 @@ busca.addEventListener('click', async () => {
   const dados = await res.json();
   console.log(dados.items);
   
-  if(location.href == 'http://127.0.0.1:5500/inicial.html'){
+  if(location.href == 'https://deborah-andrade.github.io/BookBee.github.io/inicial.html'){
     localStorage.setItem('searchResults', JSON.stringify(dados.items));
-    location.href = 'http://127.0.0.1:5500/pagesearch.html';
+    location.href = 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html';
   }else{
     livros.innerHTML = '';
   
