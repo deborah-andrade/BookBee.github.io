@@ -195,9 +195,6 @@ input::placeholder {
     font-family: belleza;
     color: #BB86FC;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
-}
-
-.bookbeeTP{
     margin: 0;
 }
 
@@ -311,8 +308,8 @@ input::placeholder {
     grid-template-rows: 560px 200px 200px;
     grid-template-areas: 
         "menuside lidosRecentes"
-        "metaDeLeitura metaDeLeitura"
-        "metaDeLeitura metaDeLeitura";
+        "menuside metaDeLeitura"
+        "menuside metaDeLeitura";
 }
 .menu{
     grid-area: menuside;
@@ -414,7 +411,69 @@ hr{
 
 .metaDeLeitura {
     grid-area: metaDeLeitura;
+    width: 960px;
+    height: 510px;
    
+    overflow: hidden;
+    position: relative;
+}
+
+.tituloMetaDeLeitura{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+.tituloMetaDeLeitura h3{
+    font-size: 35px;
+    color: #7F39FB;
+}
+
+.bi-caret-left-fill{
+      position: absolute;
+    top: 40%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #7F39FB;
+    cursor: pointer;
+    left: .5%;
+    z-index: 1; 
+}
+
+.bi-caret-right-fill {
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #7F39FB;
+    left: 95%;
+    text-align: right;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.carrosselMeta{
+    overflow: hidden;
+
+}
+
+.carrosselSlides{
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carrosselMeta::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.carrosselMeta img{
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    margin: 20px;
+    /* position: relative;
+    transition:  0.5s; */
 }
 
 /* search page  */
