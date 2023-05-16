@@ -29,7 +29,7 @@ busca.addEventListener('click', async () => {
   const dados = await res.json();
   console.log(dados.items);
   
-  if(location.href == 'https://deborah-andrade.github.io/BookBee.github.io/inicial.html'){
+  if(location.href != 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
     localStorage.setItem('searchResults', JSON.stringify(dados.items));
     location.href = 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html';
   }else{
