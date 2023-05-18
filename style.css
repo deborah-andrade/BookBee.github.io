@@ -6,6 +6,13 @@
     list-style-type: none;
 }
 
+:root{
+    --main-color: #BB86FC;
+    --second-color: #F5F1F7;
+    --third-color:#52327D;
+    --fourth-color:#7F39FB;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -232,7 +239,7 @@ input::placeholder {
 }
 
 .inicioEBusca h1{
-    color: #D9D9D9;
+    color: var(--second-color   );
     margin: 45px 15px;
 }
 
@@ -271,7 +278,7 @@ input::placeholder {
     background-color: #7F39FB;
     border: 1px solid white;
     border-radius: 15px;
-    color: #D9D9D9;
+    color: var(--second-color);
     text-align: center;
     font-size: 15px;
 }
@@ -287,7 +294,7 @@ input::placeholder {
 }
 
 .nomeUser a{
-    color: #D9D9D9;
+    color: var(--second-color);
 }
 
 .ftPerfil{
@@ -304,11 +311,11 @@ input::placeholder {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 560px 200px 200px;
+    grid-template-rows: 560px 560px 560px;
     grid-template-areas: 
         "menuside lidosRecentes"
         "menuside metaDeLeitura"
-        "menuside metaDeLeitura";
+        "menuside parteCitacoes";
 }
 .menu{
     grid-area: menuside;
@@ -351,17 +358,17 @@ hr{
 
 .tituloLidosRecentes h3{
     font-size: 35px;
-    color: #7F39FB;
+    color: var(--fourth-color);
 }
 
 .tituloLidosRecentes a{
     font-size: 20px;
-    color: #7F39FB;
+    color: var(--fourth-color);
     font-weight: bold;
     width: 100px;
 }
 
-.estilizacao{
+.estilizacaoLidos{
     display: flex;
     width: 900px;
     list-style: none;
@@ -369,7 +376,7 @@ hr{
     margin-left: 150px;
 }
 
-.estilizacao li{
+.estilizacaoLidos li{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -379,7 +386,7 @@ hr{
     cursor: pointer;
 }
 
-.estilizacao li img{
+.estilizacaoLidos li img{
     width: 100%;
     height: 100%;
     display: block;
@@ -403,15 +410,13 @@ hr{
     margin: 0 10px 5px 10px;
 }
 
-.estilizacao li:hover img{
+.estilizacaoLidos li:hover img{
     margin-top: -60px;
     margin-right: 60px;
 }
 
 .metaDeLeitura {
     grid-area: metaDeLeitura;
-    width: 960px;
-    height: 510px;
    
     overflow: hidden;
     position: relative;
@@ -426,17 +431,28 @@ hr{
 
 .tituloMetaDeLeitura h3{
     font-size: 35px;
-    color: #7F39FB;
+    color: var(--fourth-color);
+}
+
+.tituloMetaDeLeitura a{
+    font-size: 20px;
+    color: var(--fourth-color);
+    font-weight: bold;
+    width: 100px;
+}
+
+.estilizacaoMeta{
+    margin-left: 150px;
 }
 
 .bi-caret-left-fill{
-      position: absolute;
+    position: absolute;
     top: 40%;
     font-size: 60px;
     font-weight: bold;
-    color: #7F39FB;
+    color: var(--fourth-color);
     cursor: pointer;
-    left: .5%;
+    left: 9.5%;
     z-index: 1; 
 }
 
@@ -445,8 +461,8 @@ hr{
     top: 40%;
     font-size: 60px;
     font-weight: bold;
-    color: #7F39FB;
-    left: 95%;
+    color: var(--fourth-color);
+    left: 87%;
     text-align: right;
     cursor: pointer;
     z-index: 1; 
@@ -454,6 +470,7 @@ hr{
 
 .carrosselMeta{
     overflow: hidden;
+    width: 860px;
 
 }
 
@@ -471,8 +488,73 @@ hr{
     max-width: 250px;
     height: 300px;
     margin: 20px;
-    /* position: relative;
-    transition:  0.5s; */
+  
+}
+
+/* part of quotes */
+
+.parteCitacoes{
+    grid-area: parteCitacoes;
+}
+
+.tituloCitacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+.tituloCitacoes h3{
+    font-size: 35px;
+    color: var(--fourth-color);
+}
+
+.tituloCitacoes a{
+    font-size: 20px;
+    color: var(--fourth-color);
+    
+    font-weight: bold;
+    width: 100px;
+}
+
+.estilizacaoCitacoes{
+    display: flex;
+}
+.coteudoCitacao{
+    width: 500px;
+    height: 250px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.coteudoCitacao img{
+    width: 113px;
+    height: 192px;
+   
+}
+
+.coteudoCitacao .citacoes{
+    background-color: var(--fourth-color);
+    width: 300px;
+    height: 170px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--second-color);
+}
+
+.citacoes h5{
+    margin: 0 30px;
+}
+
+.citacoes p{
+    margin: 0 15px;
 }
 
 /* search page  */
