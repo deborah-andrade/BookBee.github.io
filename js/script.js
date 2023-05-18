@@ -23,30 +23,43 @@ const busca = document.getElementById('search')
 const txtprocura = document.getElementById('keyWord')
 const livros = document.getElementById('livros')
 
-busca.addEventListener('click', async () => {
-  const PrincipalBuscar = txtprocura.value.replace(' ', '+');
-  const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${PrincipalBuscar}`);
-  const dados = await res.json();
-  console.log(dados.items);
-  
-  if(location.href != 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
-    localStorage.setItem('searchResults', JSON.stringify(dados.items));
-    location.href = 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html';
-  }else{
-    livros.innerHTML = '';
-  
-    dados.items.forEach(item => {
-      let capaImagem;
-      if(item && item.volumeInfo && item.volumeInfo.imageLinks){
-        capaImagem = item.volumeInfo.imageLinks.thumbnail;
+const hadleEvent = async (event) => {
+  if(event.type === 'click' || (event.type === 'keydown' && event.key === 'Enter')){
+    console.log("kjalkjjfk")
+    event.preventDefault();
+    const PrincipalBuscar = txtprocura.value.replace(' ', '+');
+    const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${PrincipalBuscar}`);
+    const dados = await res.json();
+
+    if(!dados.items || dados.items.length === 0){
+
+      //cria algo para iniforma que o resultado não foi encontrado
+
+    }else{
+      if(location.href != 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
+        localStorage.setItem('searchResults', JSON.stringify(dados.items));
+        location.href = 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html';
       }else{
-        capaImagem = item.volumeInfo.imageLinks;
+        livros.innerHTML = '';
+      
+          dados.items.forEach(item => {
+            let capaImagem;
+            if(item && item.volumeInfo && item.volumeInfo.imageLinks){
+              capaImagem = item.volumeInfo.imageLinks.thumbnail;
+            }else{
+              capaImagem = item.volumeInfo.imageLinks;
+            }
+            livros.innerHTML = livros.innerHTML + `<div class="conteudoLivros"><img src="${capaImagem}" alt="Capa do livro">
+            <li>  ${item.volumeInfo.title}; Pag: ${item.volumeInfo.pageCount} - ${item.volumeInfo.authors} </li></div>`  
+          });
+        } 
       }
-      livros.innerHTML = livros.innerHTML + `<div class="conteudoLivros"><img src="${capaImagem}" alt="Capa do livro">
-      <li>  ${item.volumeInfo.title}; Pag: ${item.volumeInfo.pageCount} - ${item.volumeInfo.authors} </li></div>`  
-      });
-    }
-  })
+  }
+}
+
+txtprocura.addEventListener('keydown', hadleEvent);
+busca.addEventListener('click', hadleEvent);
+
 
 window.addEventListener('load', () => {
   if(window.location.href == 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
@@ -67,3 +80,4 @@ window.addEventListener('load', () => {
     });
   }
 })
+
