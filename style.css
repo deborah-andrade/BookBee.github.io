@@ -490,12 +490,11 @@ hr{
 .conteudoLivros{
     width: 400px;
     height: 200px;
-    background-color: #6c757d;
+    background-color: #bc96e6;
     border-radius: 10px;
-    color: #362D60;
-
+    color: #000;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-around;
 }
 
