@@ -572,9 +572,9 @@ hr{
 .conteudoLivros{
     width: 400px;
     height: 200px;
-    background-color: #bc96e6;
+    background-color: #9b72cf;
     border-radius: 10px;
-    color: #000;
+    color: #fff;
     display: flex;
     align-items:center;
     justify-content: space-around;
