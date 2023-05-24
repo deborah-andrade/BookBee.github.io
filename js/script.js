@@ -80,9 +80,3 @@ window.addEventListener('load', () => {
     });
   }
 })
-
-
-//cria uma função para a classificação dos livro
-//<i class="bi bi-star"></i>  link para estrela vazia
-// <i class="bi bi-star-fill"></i> estrela completa
-//<i class="bi bi-star-half"></i> estrla pela metade
