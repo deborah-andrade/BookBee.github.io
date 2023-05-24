@@ -25,7 +25,7 @@ const livros = document.getElementById('livros')
 
 const hadleEvent = async (event) => {
   if(event.type === 'click' || (event.type === 'keydown' && event.key === 'Enter')){
-    console.log("kjalkjjfk")
+    
     event.preventDefault();
     const PrincipalBuscar = txtprocura.value.replace(' ', '+');
     const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${PrincipalBuscar}`);
@@ -81,3 +81,8 @@ window.addEventListener('load', () => {
   }
 })
 
+
+//cria uma função para a classificação dos livro
+//<i class="bi bi-star"></i>  link para estrela vazia
+// <i class="bi bi-star-fill"></i> estrela completa
+//<i class="bi bi-star-half"></i> estrla pela metade
