@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Informação da leitura</title>
+</head>
+<body>
+    <header class="headerTP">
+        
+        <div class="bookbeeTP">
+            <p>BookBee</p>
+            <div class="menu-titulo">
+                <p>Menu</p>
+            </div>
+        </div>
+
+        <div class="inicioeUser">
+            <div class="inicioEBusca">
+                <h1>Inicío</h1>
+
+                <form class="search">
+                <div class="barraDeBusca">
+                    <div class="iconeBusca">
+                        <i class="bi bi-search"></i>
+                    </div>
+                        <input type="text" required id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
+                        <button id="search" type="button" >
+                           Buscar
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="nomeUser">
+                <a href="#">Nome do Usuario</a>
+                <div class="ftPerfil">
+                    <img src="imagens/perfil-de-usuario (1).png" alt="imagem de perfil">
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="mainInformacoes">
+        <div class="menu">
+            <ul>
+                <li><a href="inicial.html">
+                    <span class="icon">
+                        <i class="bi bi-house"></i>
+                    </span>
+                    <span class="txt">Home</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon">
+                        <i class="bi bi-trophy"></i>
+                    </span>
+                    <span class="txt">Metas de Leitura</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon">
+                        <i class="bi bi-stopwatch"></i>
+                    </span>
+                    <span class="txt">Cronômetro</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon">
+                        <i class="bi bi-star"></i>
+                    </span>
+                    <span class="txt">Favorito</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon">
+                        <i class="bi bi-bookmark-star"></i>
+                    </span>
+                    <span class="txt">Citações</span>
+                </a></li>
+                
+                <li><a href="index.html">
+                    <span class="icon">
+                        <i class="bi bi-box-arrow-left"></i>
+                    </span>
+                    <span class="txt">Sair</span>
+                </a></li>
+            </ul>
+            <hr>
+            <div class="logo">
+                <img src="imagens/1682512674678.png" alt="logo do bookbee">
+            </div>
+        </div>
+
+        <div class="coteudoTeladeInformacao">
+            <div class="livroEposicaos">
+                <div class="detalheSobrelivro">
+                    <img src="https://books.google.com/books/content?id=AKJGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="">
+                    <div class="tituloAutorResumo">
+                        <h2>É assim que acaba</h2>
+                        <h4>Collen Hoover</h4>
+                        <p>Quando os dois se apaixonam, Lily se vê no meio de um relacionamento turbulento que não é o que ela esperava. Mas será que ela conseguirá enxergar isso, por mais doloroso que seja? É assim que acaba é uma narrativa poderosa sobre a força necessária para fazer as escolhas certas nas situações mais difíceis.</p>
+                        <div class="exibirClassificacao">
+                            <ul>
+                                <li><i class="bi bi-star"></i></li>
+                                <li><i class="bi bi-star"></i></li>
+                                <li><i class="bi bi-star"></i></li>
+                                <li><i class="bi bi-star"></i></li>
+                                <li><i class="bi bi-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="detalhePosicao">
+                    <ul>
+                        <li><p>-</p><p>Posição</p></li>
+                        <li><p>-</p><p>Paginas</p></li>
+                        <li><p>-</p><p>Velociadade</p></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="dataeAnotacoes">
+                <div class="datas">
+                    <div class="dataInicio">
+                        <label for="dataInicio">Data de Início</label>
+                        <input type="date" name="dataInicio">
+                    </div>
+                    <div class="dataFim">
+                        <label for="dataFim">Data de Fim</label>
+                        <input type="date" name="dataFim">
+                    </div>
+                </div>
+                
+                <div class="linksParaCriaNotas">
+                    <div class="anotacoes">
+                        <a href="">Nota Pessoal</a>
+                        <i class="bi bi-plus-circle"></i>
+                    </div>
+                    <div class="resenha">
+                        <a href="">Resenha e classifição</a>
+                        <i class="bi bi-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>
