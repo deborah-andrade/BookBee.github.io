@@ -60,7 +60,6 @@ const hadleEvent = async (event) => {
 txtprocura.addEventListener('keydown', hadleEvent);
 busca.addEventListener('click', hadleEvent);
 
-
 window.addEventListener('load', () => {
   if(window.location.href == 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
     const livros = document.getElementById('livros');
@@ -80,3 +79,58 @@ window.addEventListener('load', () => {
     });
   }
 })
+
+function formatarDescricao(descricao){
+  const descricaoFormatada = descricao.replace(/<\/?p>/g, '').replace(/<br\s*\/?/g, '\n').replace(/<\/?p/g, '').replace(/<br\s*\/?>/g, '\n');
+  return limitarDescricao(descricaoFormatada);
+}
+function limitarDescricao(descricao){
+  if(descricao.length <= 500){
+    return descricao;
+  } else{
+    const descricaoLimitada = descricao.slice(0, 500).trim() + '...';
+    return descricaoLimitada;
+  }
+}
+
+async function exibirDetalheDoLivro(bookId){
+  const response = await fetch(`https://www.googleapis.com/books/v1/volumes/${bookId}`);
+  const data = await response.json();
+
+  if(data.error){
+      console.error('Ocorreu um erro ao obter as informações do livro');
+      return;
+  }
+
+  const livro = {
+      id: bookId,
+      titulo: data.volumeInfo.title ,
+      autor: data.volumeInfo.authors ? data.volumeInfo.authors[0] : 'Autor Desconhecido',
+      descricao: data.volumeInfo.description ? data.volumeInfo.description : 'Sem Descrição',
+      paginas: data.volumeInfo.pageCount,
+      imagem: data.volumeInfo.imageLinks ? data.volumeInfo.imageLinks.thumbnail : '1682512674678.png'
+  };
+
+  const parametrosURL = new URLSearchParams(livro).toString();
+  const urlDetalheLivros = `https://deborah-andrade.github.io/BookBee.github.io/detalhedolivro.html?${parametrosURL}`;
+  window.location.href = urlDetalheLivros;
+}
+
+const parametrosURL = new URLSearchParams(window.location.search);
+
+const livro ={
+  id: parametrosURL.get('id'),
+  titulo: parametrosURL.get('titulo'),
+  autor: parametrosURL.get('autor'),
+  descricao: parametrosURL.get('descricao'),
+  paginas: parametrosURL.get('paginas'),
+  imagem: parametrosURL.get('imagem')
+};
+
+
+
+document.querySelector("#tituloLivro").textContent = livro.titulo;
+document.querySelector("#autorLivro").textContent = livro.autor;
+document.querySelector("#descricaoLivro").textContent = formatarDescricao(livro.descricao)
+document.querySelector("#numPagina").textContent = livro.paginas;
+document.querySelector("#imgCapaLivro").setAttribute('src', livro.imagem);
