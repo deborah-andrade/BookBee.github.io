@@ -81,14 +81,18 @@ window.addEventListener('load', () => {
 })
 
 function formatarDescricao(descricao){
-  const descricaoFormatada = descricao.replace(/<\/?p>/g, '').replace(/<br\s*\/?/g, '\n').replace(/<\/?p/g, '').replace(/<br\s*\/?>/g, '\n');
+  const descricaoFormatada = descricao.replace(/<\/?p>/g, '')
+  .replace(/<br\s*\/?/gi, '\n').replace(/\<i\s*\>/gi, '')
+  .replace(/\<\/b\s*\>/gi, '\n').replace(/\<b\s*\>/gi, '')
+  .replace(/\<\/i\s*\>/gi, '');
   return limitarDescricao(descricaoFormatada);
 }
+
 function limitarDescricao(descricao){
-  if(descricao.length <= 500){
+  if(descricao.length <= 400){
     return descricao;
   } else{
-    const descricaoLimitada = descricao.slice(0, 500).trim() + '...';
+    const descricaoLimitada = descricao.slice(0, 400).trim() + '...';
     return descricaoLimitada;
   }
 }
@@ -108,11 +112,12 @@ async function exibirDetalheDoLivro(bookId){
       autor: data.volumeInfo.authors ? data.volumeInfo.authors[0] : 'Autor Desconhecido',
       descricao: data.volumeInfo.description ? data.volumeInfo.description : 'Sem Descrição',
       paginas: data.volumeInfo.pageCount,
-      imagem: data.volumeInfo.imageLinks ? data.volumeInfo.imageLinks.thumbnail : '1682512674678.png'
+      imagem: data.volumeInfo.imageLinks ? data.volumeInfo.imageLinks.thumbnail : 'imagens/1682512674678.png'
   };
 
   const parametrosURL = new URLSearchParams(livro).toString();
-  const urlDetalheLivros = `https://deborah-andrade.github.io/BookBee.github.io/detalhedolivro.html?${parametrosURL}`;
+  // const urlDetalheLivros = `https://deborah-andrade.github.io/BookBee.github.io/detalhedolivro.html?${parametrosURL}`;
+  const urlDetalheLivros = `http://127.0.0.1:5500/detalhedolivro.html?${parametrosURL}`;
   window.location.href = urlDetalheLivros;
 }
 
@@ -127,10 +132,32 @@ const livro ={
   imagem: parametrosURL.get('imagem')
 };
 
-
-
 document.querySelector("#tituloLivro").textContent = livro.titulo;
 document.querySelector("#autorLivro").textContent = livro.autor;
 document.querySelector("#descricaoLivro").textContent = formatarDescricao(livro.descricao)
 document.querySelector("#numPagina").textContent = livro.paginas;
 document.querySelector("#imgCapaLivro").setAttribute('src', livro.imagem);
+
+function adicionarClassificacaoEstrela() {
+  const estrelas = document.querySelectorAll(".exibirClassificacao li i");
+
+  estrelas.forEach((estrela, index) => {
+    estrela.addEventListener("mouseenter", () => {
+      resetarClassificacaoEstrela();
+
+      for (let i = 0; i <= index; i++) {
+        estrelas[i].classList.remove("bi-star");
+        estrelas[i].classList.add("bi-star-fill");
+      }
+    });
+  });
+}
+
+function resetarClassificacaoEstrela() {
+  const estrelas = document.querySelectorAll(".exibirClassificacao li i");
+
+  estrelas.forEach((estrela) => {
+    estrela.classList.remove("bi-star-fill");
+    estrela.classList.add("bi-star");
+  });
+}

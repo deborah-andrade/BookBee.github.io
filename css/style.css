@@ -24,6 +24,13 @@ main{
     margin-top: 50px;
 }
 
+a{
+    color: var(--fourth-color );
+}
+
+a:visited{
+    color: var(--third-color);
+}
 
 .ajuste{
     display: flex;
@@ -649,7 +656,7 @@ hr{
     color: var(--third-color );
     margin: 0px 0px 0 35px;
 }
-.tituloAutorResumo p{
+.tituloAutorResumo #descricaoLivro{
     margin: 17px 0 0 35px;
 }
 
