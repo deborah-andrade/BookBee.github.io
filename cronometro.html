@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    <title>Pagina da Busca</title>
+    <title>Cronômetro</title>
 </head>
 <body>
     <header class="headerTP">
@@ -98,13 +96,48 @@
             </div>
             
         </div>
-        
-        <div class="resultadoPesquisa">
-            <ul id="livros" class="resultGrid">
 
-            </ul>
-        </div>
-            <script src="js/script.js"></script>
+        <section class="cronometro">
+
+            <div class="visorCronometro">
+                <div class="visor hora">
+                    <h1 class="tempo horas">00</h1>
+                    <p class="titulohoras">Hora</p>
+                </div >
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div  class="visor minuto">
+                    <h1 class="tempo minutos">00</h1>
+                    <p class="titulominutos">Minuto</p>
+                </div>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div  class="visor Segundo">
+                    <h1 class="tempo Segundos">00</h1>
+                    <p class="tituloSegundos">Segundo</p>
+                </div>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div  class="visor Milesimo">
+                    <h1 class="tempo Milesimos">00</h1>
+                    <p class="tituloMilesimo">Milésimos</p>
+                </div>
+            </div>
+            <div class="cronometroAcao">
+                <button class="botoesCronometro">Iniciar</button>
+                <button class="botoesCronometro">Parar</button>
+                <button class="botoesCronometro">Zerar</button>
+            </div>
+
+        </section>
+        
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
