@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <title>Informação da leitura</title>
 </head>
+
 <body>
     <header class="headerTP">
-        
+
         <div class="bookbeeTP">
             <p>BookBee</p>
             <div class="menu-titulo">
@@ -24,13 +26,14 @@
                 <h1>Inicío</h1>
 
                 <form class="search">
-                <div class="barraDeBusca">
-                    <div class="iconeBusca">
-                        <i class="bi bi-search"></i>
-                    </div>
-                        <input type="text" required id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
-                        <button id="search" type="button" >
-                           Buscar
+                    <div class="barraDeBusca">
+                        <div class="iconeBusca">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <input type="text" required id="keyWord" name="keyWord"
+                            placeholder="Encontre o livro que você gosta...">
+                        <button id="search" type="button">
+                            Buscar
                         </button>
                     </div>
                 </form>
@@ -52,45 +55,45 @@
         <div class="menu">
             <ul>
                 <li><a href="inicial.html">
-                    <span class="icon">
-                        <i class="bi bi-house"></i>
-                    </span>
-                    <span class="txt">Home</span>
-                </a></li>
+                        <span class="icon">
+                            <i class="bi bi-house"></i>
+                        </span>
+                        <span class="txt">Home</span>
+                    </a></li>
                 <li><a href="inicial.html?#metaDeleitura">
-                    <span class="icon">
-                        <i class="bi bi-trophy"></i>
-                    </span>
-                    <span class="txt">Metas de Leitura</span>
-                </a></li>
-                
+                        <span class="icon">
+                            <i class="bi bi-trophy"></i>
+                        </span>
+                        <span class="txt">Metas de Leitura</span>
+                    </a></li>
+
                 <li><a href="#">
-                    <span class="icon">
-                        <i class="bi bi-stopwatch"></i>
-                    </span>
-                    <span class="txt">Cronômetro</span>
-                </a></li>
-                
+                        <span class="icon">
+                            <i class="bi bi-stopwatch"></i>
+                        </span>
+                        <span class="txt">Cronômetro</span>
+                    </a></li>
+
                 <li><a href="#">
-                    <span class="icon">
-                        <i class="bi bi-star"></i>
-                    </span>
-                    <span class="txt">Favorito</span>
-                </a></li>
-                
+                        <span class="icon">
+                            <i class="bi bi-star"></i>
+                        </span>
+                        <span class="txt">Favorito</span>
+                    </a></li>
+
                 <li><a href="inicial.html?#parteCitacoes">
-                    <span class="icon">
-                        <i class="bi bi-bookmark-star"></i>
-                    </span>
-                    <span class="txt">Citações</span>
-                </a></li>
-                
+                        <span class="icon">
+                            <i class="bi bi-bookmark-star"></i>
+                        </span>
+                        <span class="txt">Citações</span>
+                    </a></li>
+
                 <li><a href="index.html">
-                    <span class="icon">
-                        <i class="bi bi-box-arrow-left"></i>
-                    </span>
-                    <span class="txt">Sair</span>
-                </a></li>
+                        <span class="icon">
+                            <i class="bi bi-box-arrow-left"></i>
+                        </span>
+                        <span class="txt">Sair</span>
+                    </a></li>
             </ul>
             <hr>
             <div class="logo">
@@ -103,10 +106,10 @@
                 <div class="detalheSobrelivro">
                     <img id="imgCapaLivro" src="imagens/1682512674678.png" alt="">
                     <div class="tituloAutorResumo">
-                        <h2 id="tituloLivro" ></h2>
+                        <h2 id="tituloLivro"></h2>
                         <h4 id="autorLivro"></h4>
-                        <div  id="descricaoLivro"></div>
-                   
+                        <div id="descricaoLivro"></div>
+
                         <div class="exibirClassificacao">
                             <ul onmouseenter="adicionarClassificacaoEstrela()">
                                 <li><i class="bi bi-star"></i></li>
@@ -120,9 +123,18 @@
                 </div>
                 <div class="detalhePosicao">
                     <ul>
-                        <li><p>-</p><p>Posição</p></li>
-                        <li><p id="numPagina"></p><p>Paginas</p></li>
-                        <li><p>-</p><p>Velociadade</p></li>
+                        <li>
+                            <p>-</p>
+                            <p>Posição</p>
+                        </li>
+                        <li>
+                            <p id="numPagina"></p>
+                            <p>Paginas</p>
+                        </li>
+                        <li>
+                            <p>-</p>
+                            <p>Velociadade</p>
+                        </li>
                     </ul>
                 </div>
 
@@ -138,21 +150,44 @@
                         <input type="date" name="dataFim">
                     </div>
                 </div>
-                
+
                 <div class="linksParaCriaNotas">
                     <div class="anotacoes">
                         <a href="">Nota Pessoal</a>
                         <i class="bi bi-plus-circle"></i>
                     </div>
                     <div class="resenha">
-                        <a href="">Resenha e classifição</a>
+                        <a id="myBtn" href="#">Resenha e classifição</a>
                         <i class="bi bi-plus-circle"></i>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="modal-body">
+                                <div class="modal-capa">
+                                    <img src="imagens/A biblioteca da meia-noite.jpeg">
+                                    <span>*****</span>
+                                </div>
+                                <div class="modal-resenha">
+                                    <h3>Titulo do livro</h3>
+                                    <textarea placeholder="Escreva uma resenha aqui..." name="" id="" cols="30"
+                                        rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
     </main>
+    <script src="js/modal.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
