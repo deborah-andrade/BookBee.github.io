@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Belleza&family=EB+Garamond:ital,wght@0,400;1,700&family=Inter:wght@200;300&family=Merriweather:ital,wght@1,300&family=Noto+Emoji:wght@300&family=Playfair+Display:ital@1&family=Poppins&display=swap');
 
-*{
+* {
     font-family: Abhaya Libre ExtraBold;
     text-decoration: none;
     list-style-type: none;
 }
 
-:root{
+:root {
     --main-color: #BB86FC;
     --second-color: #F5F1F7;
-    --third-color:#52327D;
-    --fourth-color:#7F39FB;
+    --third-color: #52327D;
+    --fourth-color: #7F39FB;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
+main {
     height: 560.40px;
     margin-top: 50px;
 }
 
+img {
+    max-width: 100%;
+}
 
-.ajuste{
+
+.ajuste {
     display: flex;
     justify-content: space-around;
     position: relative;
 }
 
-.titulo{
+.titulo {
     color: #BB86FC;
     font-size: 160px;
     margin-left: 20px;
@@ -40,35 +44,39 @@ main{
     font-family: Belleza;
 }
 
-.emcima{
+.emcima {
     font-family: Inter;
-    width: 450px; /* Defina a largura do container conforme necessário */
+    width: 450px;
+    /* Defina a largura do container conforme necessário */
     word-wrap: break-word;
     position: absolute;
     top: 43%;
     left: 15%;
     transform: translate(-21%, -50%);
     text-align: center;
-    color: #fff; /* ou defina a cor de texto desejada */
-    font-size: 40px; /* ou defina o tamanho de fonte desejado */
+    color: #fff;
+    /* ou defina a cor de texto desejada */
+    font-size: 40px;
+    /* ou defina o tamanho de fonte desejado */
     padding: 10px;
     text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
 
 }
 
-.img img{
+.img img {
     width: 117%;
 }
 
-.login{
+.login {
     margin-left: 60%;
     display: flex;
     flex-direction: column;
     width: 200px;
-    position: relative; top: -360px;
+    position: relative;
+    top: -360px;
 }
 
-.login label{
+.login label {
     margin-left: 5%;
     font-size: 15px;
     font-weight: 900;
@@ -76,7 +84,7 @@ main{
 
 }
 
-.login input{
+.login input {
     margin-bottom: 20px;
     padding: 15px;
     width: 300px;
@@ -87,7 +95,7 @@ main{
 
 }
 
-.login #senha{
+.login #senha {
     margin-bottom: 0px;
 }
 
@@ -95,31 +103,32 @@ input::placeholder {
     color: #D9D9D9;
 }
 
-.login i{
+.login i {
     font-size: 20px;
     cursor: pointer;
     color: #000;
-    position: relative; top: -35px;
+    position: relative;
+    top: -35px;
     margin-left: 148%;
 }
 
-.cadastre{
+.cadastre {
     color: #6c757d;
     display: flex;
     flex-direction: column;
     font-size: 12px;
 }
 
-.cadastre ul{
+.cadastre ul {
     padding: 0;
 }
 
-.cadastre a:hover{
+.cadastre a:hover {
     text-decoration: underline;
 }
 
 
-.botao input{
+.botao input {
     margin-left: 90px;
     border: none;
     padding: 12px;
@@ -130,12 +139,13 @@ input::placeholder {
     font-size: 16px;
 }
 
-.titulo01{
+.titulo01 {
     color: #BB86FC;
     font-size: 90px;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
     font-family: belleza;
-    position: relative; bottom: 40px;
+    position: relative;
+    bottom: 40px;
 
 }
 
@@ -144,10 +154,11 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     width: 200px;
-    position: relative; top: -440px;
+    position: relative;
+    top: -440px;
 }
 
-.cadastro label{
+.cadastro label {
     margin-left: 4%;
     margin-bottom: 6px;
     font-size: 15px;
@@ -155,7 +166,7 @@ input::placeholder {
     color: #7F39FB;
 }
 
-.cadastro input{
+.cadastro input {
     margin-bottom: 15px;
     padding: 15px;
     width: 300px;
@@ -165,7 +176,7 @@ input::placeholder {
     border: 2px solid #D9D9D9;
 }
 
-.botao01 input{
+.botao01 input {
     margin-left: 95px;
     border: none;
     width: 130px;
@@ -175,28 +186,30 @@ input::placeholder {
     font-size: 16px;
 }
 
-.login01{
+.login01 {
     color: #6c757d;
     display: flex;
     width: 300px;
     font-size: 12px;
 }
+
 .login01 ul {
     padding: 0;
     margin-block: 0 20px;
 }
-.login01 a:hover{
+
+.login01 a:hover {
     text-decoration: underline;
 }
 
-.img01 img{
-    width: 949px; 
+.img01 img {
+    width: 949px;
     margin-left: 400px;
 }
 
 /* tela principal - style do header  */
 
-.bookbeeTP{
+.bookbeeTP {
     display: flex;
     flex-direction: column;
     font-size: 65px;
@@ -206,11 +219,11 @@ input::placeholder {
     margin: 0;
 }
 
-.bookbeeTP p{
+.bookbeeTP p {
     margin-bottom: 20px;
 }
 
-.menu-titulo{
+.menu-titulo {
     font-size: 21px;
     color: #7F39FB;
     font-weight: 800;
@@ -236,12 +249,12 @@ input::placeholder {
     align-items: center;
 }
 
-.inicioEBusca h1{
-    color: var(--second-color   );
+.inicioEBusca h1 {
+    color: var(--second-color);
     margin: 45px 15px;
 }
 
-.barraDeBusca{
+.barraDeBusca {
     width: 349px;
     height: 50px;
     background-color: white;
@@ -251,12 +264,12 @@ input::placeholder {
     align-items: center;
 }
 
-.barraDeBusca .iconeBusca{
+.barraDeBusca .iconeBusca {
     margin-left: 8px;
     color: #7F39FB;
 }
 
-.barraDeBusca input{
+.barraDeBusca input {
     width: 15vw;
     flex: 1;
     outline: none;
@@ -265,12 +278,12 @@ input::placeholder {
     text-align: center;
 }
 
-.barraDeBusca input[type='text']::placeholder{
-    color:rgba(163, 95, 212, 45%);
+.barraDeBusca input[type='text']::placeholder {
+    color: rgba(163, 95, 212, 45%);
     font-size: 15px;
 }
 
-.barraDeBusca button{
+.barraDeBusca button {
     width: 90px;
     height: 50px;
     background-color: #7F39FB;
@@ -281,7 +294,7 @@ input::placeholder {
     font-size: 15px;
 }
 
-.nomeUser{
+.nomeUser {
     width: 220px;
     margin-bottom: 35px;
 
@@ -291,82 +304,85 @@ input::placeholder {
     font-size: 20px;
 }
 
-.nomeUser a{
+.nomeUser a {
     color: var(--second-color);
 }
 
-.ftPerfil{
+.ftPerfil {
     width: 64px;
     height: 68.8px;
 }
 
-.ftPerfil i{
+.ftPerfil i {
     width: 100%;
     height: 100%;
 }
 
-.mainTelaPrincipal{
+.mainTelaPrincipal {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 560px 560px 560px;
-    grid-template-areas: 
+    grid-template-areas:
         "menuside lidosRecentes"
         "menuside metaDeLeitura"
         "menuside parteCitacoes";
 }
-.menu{
+
+.menu {
     grid-area: menuside;
 }
-.menu ul li{
+
+.menu ul li {
     font-size: 28px;
     margin-top: 25px;
     color: #7F39FB;
 }
 
-.menu li i{
+.menu li i {
     font-size: 30px;
 }
 
-.logo{
+.logo {
     display: flex;
 }
 
-.logo img{
-    width: 180px; 
+.logo img {
+    width: 180px;
     margin-left: 35px;
 }
 
-hr{
-    width: 50%; 
+hr {
+    width: 50%;
     margin-left: 10%;
 }
 
-.lidosRecentes{
+.lidosRecentes {
     grid-area: lidosRecentes;
     margin-top: 50px;
-   
+
 }
-.tituloLidosRecentes{
+
+.tituloLidosRecentes {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 90px;
 }
 
-.tituloLidosRecentes h3{
+.tituloLidosRecentes h3 {
     font-size: 35px;
     color: var(--fourth-color);
 }
 
-.tituloLidosRecentes a{
+.tituloLidosRecentes a {
     font-size: 20px;
     color: var(--fourth-color);
     font-weight: bold;
     width: 100px;
 }
 
-.estilizacaoLidos{
+.estilizacaoLidos {
     display: flex;
     width: 900px;
     list-style: none;
@@ -374,7 +390,7 @@ hr{
     margin-left: 150px;
 }
 
-.estilizacaoLidos li{
+.estilizacaoLidos li {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -384,7 +400,7 @@ hr{
     cursor: pointer;
 }
 
-.estilizacaoLidos li img{
+.estilizacaoLidos li img {
     width: 100%;
     height: 100%;
     display: block;
@@ -393,7 +409,7 @@ hr{
     transition: .5s;
 }
 
-.informacaoLivro{
+.informacaoLivro {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -408,42 +424,42 @@ hr{
     margin: 0 10px 5px 10px;
 }
 
-.estilizacaoLidos li:hover img{
+.estilizacaoLidos li:hover img {
     margin-top: -60px;
     margin-right: 60px;
 }
 
 .metaDeLeitura {
     grid-area: metaDeLeitura;
-   
+
     overflow: hidden;
     position: relative;
 }
 
-.tituloMetaDeLeitura{
+.tituloMetaDeLeitura {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 90px;
 }
 
-.tituloMetaDeLeitura h3{
+.tituloMetaDeLeitura h3 {
     font-size: 35px;
     color: var(--fourth-color);
 }
 
-.tituloMetaDeLeitura a{
+.tituloMetaDeLeitura a {
     font-size: 20px;
     color: var(--fourth-color);
     font-weight: bold;
     width: 100px;
 }
 
-.estilizacaoMeta{
+.estilizacaoMeta {
     margin-left: 150px;
 }
 
-.bi-caret-left-fill{
+.bi-caret-left-fill {
     position: absolute;
     top: 40%;
     font-size: 60px;
@@ -451,7 +467,7 @@ hr{
     color: var(--fourth-color);
     cursor: pointer;
     left: 9.5%;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .bi-caret-right-fill {
@@ -463,172 +479,174 @@ hr{
     left: 87%;
     text-align: right;
     cursor: pointer;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.carrosselMeta{
+.carrosselMeta {
     overflow: hidden;
     width: 860px;
 
 }
 
-.carrosselSlides{
+.carrosselSlides {
     display: flex;
     transition: transform 0.8s ease-in-out;
 }
 
-.carrosselMeta::-webkit-scrollbar{
+.carrosselMeta::-webkit-scrollbar {
     visibility: hidden;
 }
 
-.carrosselMeta img{
+.carrosselMeta img {
     width: 100%;
     max-width: 250px;
     height: 300px;
     margin: 20px;
-  
+
 }
 
 /* part of quotes */
 
-.parteCitacoes{
+.parteCitacoes {
     grid-area: parteCitacoes;
 }
 
-.tituloCitacoes{
+.tituloCitacoes {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 90px;
 }
 
-.tituloCitacoes h3{
+.tituloCitacoes h3 {
     font-size: 35px;
     color: var(--fourth-color);
 }
 
-.tituloCitacoes a{
+.tituloCitacoes a {
     font-size: 20px;
     color: var(--fourth-color);
-    
+
     font-weight: bold;
     width: 100px;
 }
 
-.estilizacaoCitacoes{
+.estilizacaoCitacoes {
     display: flex;
 }
-.coteudoCitacao{
+
+.coteudoCitacao {
     width: 500px;
     height: 250px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.coteudoCitacao img{
+.coteudoCitacao img {
     width: 113px;
     height: 192px;
-   
+
 }
 
-.coteudoCitacao .citacoes{
+.coteudoCitacao .citacoes {
     background-color: var(--fourth-color);
     width: 300px;
     height: 170px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--second-color);
 }
 
-.citacoes h5{
+.citacoes h5 {
     margin: 0 30px;
 }
 
-.citacoes p{
+.citacoes p {
     margin: 0 15px;
 }
 
 /* search page  */
 
-.resultadoPesquisa{
+.resultadoPesquisa {
     margin-top: 45px;
 }
-.resultGrid{
+
+.resultGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 0;
 }
 
-.conteudoLivros{
+.conteudoLivros {
     width: 400px;
     height: 200px;
     background-color: #9b72cf;
     border-radius: 10px;
     color: #fff;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
 }
 
-.conteudoLivros img{
+.conteudoLivros img {
     width: 128px;
     height: 189px;
 }
 
 /* parte da tela de informações sobre a leitura */
 
-.mainInformacoes{
-    
+.mainInformacoes {
+
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 310px 310px;
-    grid-template-areas: 
+    grid-template-areas:
         "menuside coteudoTeladeInformacao"
         "menuside coteudoTeladeInformacao"
 }
 
 
-.coteudoTeladeInformacao{
+.coteudoTeladeInformacao {
     grid-area: coteudoTeladeInformacao;
     margin-top: 45px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 360px 360px;
-    grid-template-areas: 
+    grid-template-areas:
         "livroEposicaos dataeAnotacoes"
         "livroEposicaos dataeAnotacoes"
 }
 
-.livroEposicaos{
+.livroEposicaos {
     grid-area: livroEposicaos;
     width: 650px;
     height: 620px;
     display: block;
 }
 
-.detalheSobrelivro{
-    
+.detalheSobrelivro {
+
     width: 645px;
 
     display: flex;
     justify-content: center;
 }
 
-.detalheSobrelivro img{
+.detalheSobrelivro img {
     width: 259px;
     height: 362px;
 }
 
-.tituloAutorResumo{
+.tituloAutorResumo {
     background-color: var(--main-color);
     color: var(--second-color);
     width: 686px;
@@ -640,29 +658,31 @@ hr{
     flex-direction: column;
 }
 
-.tituloAutorResumo h2{
-    color: var(--third-color );
+.tituloAutorResumo h2 {
+    color: var(--third-color);
     margin: 38px 0px 0 25px;
 }
 
-.tituloAutorResumo h4{
-    color: var(--third-color );
+.tituloAutorResumo h4 {
+    color: var(--third-color);
     margin: 0px 0px 0 35px;
 }
-.tituloAutorResumo p{
+
+.tituloAutorResumo p {
     margin: 17px 0 0 35px;
 }
 
-.exibirClassificacao ul{
+.exibirClassificacao ul {
     margin: 34px 0 0 0;
     color: var(--third-color);
 }
-.exibirClassificacao li{
+
+.exibirClassificacao li {
     display: inline;
-   
+
 }
 
-.detalhePosicao{
+.detalhePosicao {
     background-color: var(--third-color);
     width: 463px;
     height: 88px;
@@ -670,13 +690,14 @@ hr{
     margin: 103px 0px 0px 105px;
 }
 
-.detalhePosicao ul{
+.detalhePosicao ul {
     color: var(--second-color);
     padding: 0 15px 0 40px;
     display: inline-flex;
-    
+
 }
-.detalhePosicao li{
+
+.detalhePosicao li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -684,20 +705,21 @@ hr{
     margin: 18px 0;
     padding: 0 35px 0 35px;
 }
-.detalhePosicao li p{
+
+.detalhePosicao li p {
     margin: 0;
 }
- 
+
 .detalhePosicao li:first-child {
     border-right: 1px solid var(--second-color);
 }
 
-.detalhePosicao li:last-child{
+.detalhePosicao li:last-child {
     border-left: 1px solid var(--second-color);
 }
 
-.dataeAnotacoes{
-   
+.dataeAnotacoes {
+
     grid-area: dataeAnotacoes;
     width: 430px;
     height: 550px;
@@ -710,7 +732,7 @@ hr{
 
 }
 
-.datas{
+.datas {
     height: 220px;
 
     display: flex;
@@ -719,21 +741,21 @@ hr{
 }
 
 .dataInicio,
-.dataFim{
+.dataFim {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .dataInicio label,
-.dataFim label{
+.dataFim label {
     font-size: 20px;
     font-weight: bold;
     color: var(--third-color);
 }
 
 .dataInicio input[type="date"],
-.dataFim input[type="date"]{
+.dataFim input[type="date"] {
     background-color: var(--third-color);
     color: var(--second-color);
     width: 187px;
@@ -757,7 +779,7 @@ hr{
     display: none;
 }
 
-.linksParaCriaNotas{
+.linksParaCriaNotas {
     width: 363px;
     height: 150px;
 
@@ -768,7 +790,7 @@ hr{
 }
 
 .anotacoes,
-.resenha{
+.resenha {
     background-color: var(--third-color);
     width: 316px;
     height: 50px;
@@ -780,13 +802,97 @@ hr{
 }
 
 .anotacoes a,
-.resenha a{
+.resenha a {
     color: var(--second-color);
     font-size: 20px;
     padding-left: 29px;
 }
 
 .anotacoes i,
-.resenha i{
+.resenha i {
     padding-right: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background-color: var(--main-color);
+}
+
+/* The Close Button */
+.close {
+    color: var(--main-color);
+    position: absolute;
+    background-color: var(--third-color);
+    top: -8px;
+    right: -8px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.modal-capa {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-resenha {
+    width: 75%;
+}
+
+.modal-resenha h3 {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.modal-resenha textarea {
+    width: 100%;
+    border-radius: 4px;
 }
