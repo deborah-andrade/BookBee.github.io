@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <header class="headerTP">
+        
+        <div class="bookbeeTP">
+            <p>BookBee</p>
+            <div class="menu-titulo">
+                <p>Menu</p>
+            </div>
+        </div>
+
+        <div class="inicioeUser">
+            <div class="inicioEBusca">
+                <h1>Inicío</h1>
+
+                <form class="search">
+                <div class="barraDeBusca">
+                    <div class="iconeBusca">
+                        <i class="bi bi-search"></i>
+                    </div>
+                        <input type="text" required id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
+                        <button id="search" type="button" >
+                           Buscar
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="nomeUser">
+                <a href="#">Nome do Usuario</a>
+                <div class="ftPerfil">
+                    <img src="imagens/perfil-de-usuario (1).png" alt="imagem de perfil">
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="mainTelaPrincipal">
+        <div class="menu">
+            <ul>
+                <li><a href="inicial.html">
+                    <span class="icon">
+                        <i class="bi bi-house"></i>
+                    </span>
+                    <span class="txt">Home</span>
+                </a></li>
+                <li><a href="inicial.html?#metaDeleitura">
+                    <span class="icon">
+                        <i class="bi bi-trophy"></i>
+                    </span>
+                    <span class="txt">Metas de Leitura</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon">
+                        <i class="bi bi-stopwatch"></i>
+                    </span>
+                    <span class="txt">Cronômetro</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon">
+                        <i class="bi bi-star"></i>
+                    </span>
+                    <span class="txt">Favorito</span>
+                </a></li>
+                
+                <li><a href="inicial.html?#parteCitacoes">
+                    <span class="icon">
+                        <i class="bi bi-bookmark-star"></i>
+                    </span>
+                    <span class="txt">Citações</span>
+                </a></li>
+                
+                <li><a href="index.html">
+                    <span class="icon">
+                        <i class="bi bi-box-arrow-left"></i>
+                    </span>
+                    <span class="txt">Sair</span>
+                </a></li>
+            </ul>
+            <hr>
+            <div class="logo">
+                <img src="imagens/1682512674678.png" alt="logo do bookbee">
+            </div>
+            
+        </div>
+
+        <section class="cronometro">
+
+            <div class="visorCronometro">
+                <div class="visor hora">
+                    <h1 class="tempo horas">00</h1>
+                    <p class="titulohoras">Hora</p>
+                </div >
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div  class="visor minuto">
+                    <h1 class="tempo minutos">00</h1>
+                    <p class="titulominutos">Minuto</p>
+                </div>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div  class="visor Segundo">
+                    <h1 class="tempo Segundos">00</h1>
+                    <p class="tituloSegundos">Segundo</p>
+                </div>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div  class="visor Milesimo">
+                    <h1 class="tempo Milesimos">00</h1>
+                    <p class="tituloMilesimo">Milésimos</p>
+                </div>
+            </div>
+            <div class="cronometroAcao">
+                <button class="botoesCronometro">Iniciar</button>
+                <button class="botoesCronometro">Parar</button>
+                <button class="botoesCronometro">Zerar</button>
+            </div>
+
+        </section>
+        
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

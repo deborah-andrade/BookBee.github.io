@@ -797,3 +797,69 @@ hr{
 .resenha i{
     padding-right: 10px;
 }
+
+/* cronometro */
+
+.cronometro{
+    margin-top: 100px;
+    width: 900px;
+}
+
+.visorCronometro{
+    width: 900px;
+    height: 169px;
+    border: 3px solid var(--main-color);
+
+    display:  flex;
+    justify-content: space-around;
+}
+
+.visor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.visor p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tempo{
+    font-size: 88px;
+    margin: 25px 0 0 0;
+}
+
+.pontos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pontos span{
+    height: 15px;
+    width: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.cronometroAcao{
+    height: 253px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.botoesCronometro{
+    height: 50px;
+    width: 227px;
+    border: 3px var(--main-color) solid;
+    background: none;
+    font-size: 32px;
+    color: var(--fourth-color)
+}
