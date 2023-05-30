@@ -878,6 +878,10 @@ hr {
     cursor: pointer;
 }
 
+.modal-content{
+    width: 60%;
+}
+
 .modal-body {
     display: flex;
     gap: 1rem;
@@ -885,10 +889,15 @@ hr {
 }
 
 .modal-capa {
-    width: 25%;
+    width: 30%;
     display: flex;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
+}
+
+.modal-capa img{
+    width: 200px;
 }
 
 .modal-resenha {
@@ -896,15 +905,26 @@ hr {
 }
 
 .modal-resenha h3 {
-    background-color: #fff;
+    background-color: var(--second-color);
     padding: 0.5rem;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: var(--third-color);
 }
 
 .modal-resenha textarea {
-    width: 100%;
-    border-radius: 4px;
+    width: 99%;
+    height: 375px;
+    border-radius: 5px;
     resize: none;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+
+.modal-resenha textarea::placeholder{
+    font-size: 20px;
+    color: var(--third-color);
 }
 /* cronometro */
 
@@ -970,4 +990,22 @@ hr {
     background: none;
     font-size: 32px;
     color: var(--fourth-color);
+}
+
+.modal-exibirClassificacao{
+    background-color: var(--second-color);
+    width: 231px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.modal-exibirClassificacao ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.modal-exibirClassificacao .bi.bi-star{
+    font-size: 20px;
 }

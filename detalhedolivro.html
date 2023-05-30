@@ -169,11 +169,19 @@
                             <span class="close">&times;</span>
                             <div class="modal-body">
                                 <div class="modal-capa">
-                                    <img src="imagens/A biblioteca da meia-noite.jpeg">
-                                    <span>*****</span>
+                                    <img id="img-capa-modal">
+                                    <div class="modal-exibirClassificacao">
+                                        <ul onmouseenter="adicionarClassificacaoEstrela()">
+                                            <li><i class="bi bi-star"></i></li>
+                                            <li><i class="bi bi-star"></i></li>
+                                            <li><i class="bi bi-star"></i></li>
+                                            <li><i class="bi bi-star"></i></li>
+                                            <li><i class="bi bi-star"></i></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="modal-resenha">
-                                    <h3>Titulo do livro</h3>
+                                    <h3 id="titulo-modal"></h3>
                                     <textarea placeholder="Escreva uma resenha aqui..." name="" id="" cols="30"
                                         rows="10"></textarea>
                                 </div>
@@ -186,7 +194,6 @@
         </div>
 
     </main>
-    <script src="js/modal.js"></script>
     <script src="js/script.js"></script>
 </body>
 
