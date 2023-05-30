@@ -81,7 +81,7 @@ a:visited{
     flex-direction: column;
     width: 200px;
     position: relative;
-    top: -360px;
+    top: -260px;
 }
 
 .login label {
@@ -159,11 +159,12 @@ input::placeholder {
 
 .cadastro {
     margin-left: 60%;
+    /* margin-top: 0px; */
     display: flex;
     flex-direction: column;
     width: 200px;
     position: relative;
-    top: -440px;
+    top: -340px;
 }
 
 .cadastro label {
