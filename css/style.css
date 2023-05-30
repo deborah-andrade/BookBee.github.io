@@ -881,6 +881,7 @@ hr {
 
 .modal-content{
     width: 60%;
+    border-radius: 15px;
 }
 
 .modal-body {
@@ -917,6 +918,7 @@ hr {
 .modal-resenha textarea {
     width: 99%;
     height: 375px;
+    padding: 10px;
     border-radius: 5px;
     resize: none;
     border: 0;
@@ -1002,6 +1004,7 @@ hr {
 .modal-content-notas{
     width: 60%;
     height: 55%;
+    border-radius: 15px;
 }
 
 .modal-body-notas {
@@ -1020,6 +1023,7 @@ hr {
 
 .modal-capa-notas img{
     width: 200px;
+    margin-bottom: 25px;
 }
 
 .modal-notas {
@@ -1030,7 +1034,7 @@ hr {
     background-color: var(--second-color);
     padding: 0.9rem;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 24px;
     color: var(--third-color);
 }
 
@@ -1047,6 +1051,7 @@ hr {
 .modal-resenha textarea::placeholder{
     font-size: 20px;
     color: var(--third-color);
+    padding: 10px;
 }
 /* cronometro */
 
