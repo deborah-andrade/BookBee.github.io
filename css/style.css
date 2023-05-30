@@ -990,6 +990,7 @@ hr {
     background: none;
     font-size: 32px;
     color: var(--fourth-color);
+    cursor: pointer;
 }
 
 .modal-exibirClassificacao{
