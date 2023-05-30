@@ -116,8 +116,8 @@ async function exibirDetalheDoLivro(bookId){
   };
 
   const parametrosURL = new URLSearchParams(livro).toString();
-  // const urlDetalheLivros = `https://deborah-andrade.github.io/BookBee.github.io/detalhedolivro.html?${parametrosURL}`;
-  const urlDetalheLivros = `http://127.0.0.1:5500/detalhedolivro.html?${parametrosURL}`;
+   const urlDetalheLivros = `https://deborah-andrade.github.io/BookBee.github.io/detalhedolivro.html?${parametrosURL}`;
+  //const urlDetalheLivros = `http://127.0.0.1:5500/detalhedolivro.html?${parametrosURL}`;
   window.location.href = urlDetalheLivros;
 }
 
