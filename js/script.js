@@ -122,52 +122,6 @@ async function exibirDetalheDoLivro(bookId){
 
 //modal resenha
 const parametrosURL = new URLSearchParams(window.location.search);
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-  const imgmodal= parametrosURL.get('imagem');
-  document.querySelector("#img-capa-modal").setAttribute('src',imgmodal);
-  document.querySelector("#tituloLivro").textContent = livro.titulo;
-
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-//modal Pessoal 
-var modalN = document.getElementById("myModalNotas");
-
-// Get the button that opens the modal
-var btnN = document.getElementById("myBtnNotas");
-
-// Get the <span> element that closes the modal
-var spanN = document.getElementsByClassName("close")[0];
-
-btnN.onclick = function() {
-  modalN.style.display = "block";
-  const imgmodal= parametrosURL.get('imagem');
-  document.querySelector("#img-capa-modal").setAttribute('src',imgmodal);
-  document.querySelector("#tituloLivro").textContent = livro.titulo;
-}
-
-// When the user clicks on <span> (x), close the modal
-spanN.onclick = function() {
-  modalN.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalN) {
-    modalN.style.display = "none";
-  }
-}
 
 const livro ={
   id: parametrosURL.get('id'),
