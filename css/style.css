@@ -858,6 +858,19 @@ hr {
     background-color: var(--main-color);
 }
 
+.modal-content button{
+    position: absolute;
+    width: 187px;
+    height: 51px;
+    left: 50px;
+    top: 340px;
+    font-size: 23px;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    border: none;
+    border-radius: 15px;
+}
+
 /* The Close Button */
 .close {
     color: var(--main-color);
@@ -1051,6 +1064,19 @@ hr {
 .modal-notas textarea::placeholder{
     font-size: 20px;
     color: var(--third-color);
+}
+
+.modal-content-notas button{
+    position: absolute;
+    width: 187px;
+    height: 51px;
+    left: 50px;
+    top: 340px;
+    font-size: 23px;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    border: none;
+    border-radius: 15px;
 }
 /* cronometro */
 
