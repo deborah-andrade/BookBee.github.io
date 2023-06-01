@@ -147,6 +147,25 @@ btnSalvaNota.addEventListener('click', function () {
   let textNota = reviewTexArea.value;
 
   arrayDeNotas.push(textNota);
+  if(arrayDeNotas.length > 3){
+    arrayDeNotas = arrayDeNotas.slice(arrayDeNotas.length - 3);
+  }
+
+  let areaNotasSalvas = document.getElementById("textNotasSalvas");
+  areaNotasSalvas.innerHTML = "";
+
+  for(let i = 0; i < arrayDeNotas.length; i++){
+  
+    let novoParagrafo = document.createElement('p');
+    novoParagrafo.classList.add('nota');
+    let textoNota = document.createElement('span')
+    textoNota.classList.add('textoNota');
+    textoNota.textContent = arrayDeNotas[i];
+    novoParagrafo.appendChild(textoNota);
+    areaNotasSalvas.appendChild(novoParagrafo);
+  }
+
+  reviewTexArea.value = ""
 
   console.log(arrayDeNotas)
 })
