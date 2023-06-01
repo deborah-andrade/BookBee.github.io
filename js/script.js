@@ -35,11 +35,11 @@ const hadleEvent = async (event) => {
 
       //cria algo para iniforma que o resultado não foi encontrado
 
-    }else{
-      if(location.href != 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
-        localStorage.setItem('searchResults', JSON.stringify(dados.items));
-        location.href = 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html';
-      }else{
+    // }else{
+    //   if(location.href != 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
+    //     localStorage.setItem('searchResults', JSON.stringify(dados.items));
+    //     location.href = 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html';
+    //   }else{
         livros.innerHTML = '';
       
           dados.items.forEach(item => {
@@ -50,18 +50,18 @@ const hadleEvent = async (event) => {
               capaImagem = item.volumeInfo.imageLinks;
             }
             livros.innerHTML = livros.innerHTML + `<div class="conteudoLivros"><img src="${capaImagem}" alt="Capa do livro">
-            <li>  ${item.volumeInfo.title}; Pag: ${item.volumeInfo.pageCount} - ${item.volumeInfo.authors} </li></div>`  
+            <li>  ${item.volumeInfo.title}; Pag: ${item.volumeInfo.pageCount} - ${item.volumeInfo.authors} <button class="adicionarLivro"><i class="bi bi-plus-square"></i></button></li></div>`  
           });
         } 
       }
   }
-}
+// }
 
 txtprocura.addEventListener('keydown', hadleEvent);
 busca.addEventListener('click', hadleEvent);
 
 window.addEventListener('load', () => {
-  if(window.location.href == 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
+  // if(window.location.href == 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
     const livros = document.getElementById('livros');
     const searchResults = JSON.parse(localStorage.getItem('searchResults'));
   
@@ -75,10 +75,10 @@ window.addEventListener('load', () => {
         capaImagem = item.imageLinks;
       }
       livros.innerHTML = livros.innerHTML + `<div class="conteudoLivros"><img src="${capaImagem}" alt="Capa do livro">
-      <li>  ${item.volumeInfo.title}; Pag: ${item.volumeInfo.pageCount} - ${item.volumeInfo.authors} </li></div>`  
+      <li>  ${item.volumeInfo.title}; Pag: ${item.volumeInfo.pageCount} - ${item.volumeInfo.authors}  <button class="adicionarLivro"><i class="bi bi-plus-square"></i></button></li></div>`  
     });
   }
-})
+/*}*/)
 
 function formatarDescricao(descricao){
   const descricaoFormatada = descricao.replace(/<\/?p>/g, '')

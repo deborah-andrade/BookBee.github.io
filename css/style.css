@@ -609,6 +609,19 @@ hr {
     width: 128px;
     height: 189px;
 }
+.adicionarLivro{
+    width: 30px;
+    height: 25px;
+    border: none;
+    color: var(--second-color);
+    background-color: var(--third-color);
+    cursor: pointer;
+    align-items: center;
+}
+
+.adicionarLivro:hover{
+    background-color: var(--third-color-shadow);
+}
 
 /* parte da tela de informações sobre a leitura */
 
