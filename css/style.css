@@ -1094,7 +1094,7 @@ hr {
 }
 
 .modal-notas textarea::placeholder{
-    font-size: 20px;
+    font-size: 14px;
     color: var(--third-color);
 }
 
