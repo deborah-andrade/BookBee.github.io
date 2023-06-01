@@ -875,7 +875,7 @@ hr {
     width: 187px;
     height: 51px;
     left: 50px;
-    top: 375px;
+    top: 385px;
     font-size: 23px;
     background-color: var(--third-color);
     color: var(--second-color);
@@ -1102,7 +1102,7 @@ hr {
     position: absolute;
     width: 187px;
     height: 51px;
-    left: 35px;
+    left: 30px;
     top: 340px;
     font-size: 23px;
     background-color: var(--third-color);
