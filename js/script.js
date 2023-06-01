@@ -131,6 +131,8 @@ var btnSave1 = document.getElementById("btnSalvar1");
 var btnSave2 = document.getElementById("btnSalvar2");
 var span1 = document.getElementsByClassName("close-notas")[0];
 var span2 = document.getElementsByClassName("close")[0];
+let btnSalvaNota = document.getElementById("salarModalNotas");
+let arrayDeNotas = [];
 
 // Função para abrir o modal 1
 function abrirModal1() {
@@ -139,6 +141,15 @@ function abrirModal1() {
   document.querySelector("#img-capa-modal-notas").setAttribute('src', imgmodal);
   document.querySelector("#titulo-modal-notas").textContent = livro.titulo;
 }
+
+btnSalvaNota.addEventListener('click', function () {
+  let reviewTexArea = document.getElementById('reviewTextArea');
+  let textNota = reviewTexArea.value;
+
+  arrayDeNotas.push(textNota);
+
+  console.log(arrayDeNotas)
+})
 
 // Função para fechar o modal 1
 function fecharModal1() {
