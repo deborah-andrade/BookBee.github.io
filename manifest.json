@@ -1,0 +1,16 @@
+{
+    "name": "BookBee",
+    "short_name": "BookBee",
+    "start_url" : "/index.html",
+    "display": "standalone",
+    "background_color": "#F5F1F7",
+    "theme_color": "#BB86FC",
+    "description":"Reading Assistant",
+    "icons":[
+        {
+            "src": "imagens/1682512674678.png",
+            "sizes": "577x593",
+            "type": "image/png"
+        }
+    ]
+}

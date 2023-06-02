@@ -334,6 +334,7 @@ input::placeholder {
     grid-template-areas:
         "menuside lidosRecentes"
         "menuside metaDeLeitura"
+        "menuside livrosFavoritos"
         "menuside parteCitacoes";
 }
 
@@ -496,7 +497,7 @@ hr {
 
 }
 
-.carrosselSlides {
+.carrosselMeta .carrosselSlides {
     display: flex;
     transition: transform 0.8s ease-in-out;
 }
@@ -512,6 +513,62 @@ hr {
     margin: 20px;
 
 }
+
+/* part of favorites  */
+
+.livrosFavoritos {
+    grid-area: livrosFavoritos;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.tituloLivrosFavoritos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+.tituloLivrosFavoritos h3 {
+    font-size: 35px;
+    color: var(--fourth-color);
+}
+
+.tituloLivrosFavoritos a {
+    font-size: 20px;
+    color: var(--fourth-color);
+    font-weight: bold;
+    width: 100px;
+}
+
+.estilizacaoFavoritos {
+    margin-left: 150px;
+}
+
+.carrosselFavoritos {
+    overflow: hidden;
+    width: 860px;
+
+}
+
+.carrosselFavoritos .carrosselSlides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carrosselFavoritos::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.carrosselFavoritos img {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    margin: 20px;
+
+}
+
 
 /* part of quotes */
 
