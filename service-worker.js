@@ -1,15 +1,14 @@
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open('my-cache')
-        .then(cache => cache.addAll([
-            '/index.html',
-            '/cadastro.html',
-            '/inicial.html',
-            '/cronometro.html',
-            '/css/style.css',
-            '/js/script.js'
-        ]))
-    );
+self.addEventListener('install', async event => {
+    const cache = await caches.open('my-cache');
+    try{
+        await cache.add('/inicial.html');
+        await cache.add( '/css/style.css');
+        await cache.add('/js/script.js');
+        console.log('arquivo adicionados ao cache')
+    } catch (error) {
+        console.log("falha ao adicionar ao cache:", error);
+    }
+
 });
 
 self.addEventListener('activate', event => {
