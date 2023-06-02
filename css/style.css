@@ -1258,6 +1258,9 @@ hr {
         text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
     }
     
+    .cadastro{
+        margin-left: 58%;
+    }
 }
 
 @media (max-width: 1300px){
@@ -1278,6 +1281,7 @@ hr {
         text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
     }
     
+
 }
 
 @media (max-width: 1272px){
@@ -1327,6 +1331,9 @@ hr {
         top: -260px;
     }
     
+    .cadastro{
+        margin-left: 56%;
+    }
 }
 
 @media (max-width: 1200px){
@@ -1374,7 +1381,11 @@ hr {
         width: 200px;
         position: relative;
         top: -260px;
-    }   
+    }
+
+    .titulo01{
+        font-size: 85px;
+    }
 }
 
 
@@ -1404,6 +1415,10 @@ hr {
         position: relative;
         top: -260px;
     }   
+
+    .titulo01{
+        font-size: 80px;
+    }
 }
 
 @media (max-width: 1090px){
@@ -1517,9 +1532,10 @@ hr {
         flex-direction: column;
         width: 200px;
         position: relative;
-        left: -25%;
-        top: 2%;
+        right: 22%;
+        margin-top: 23%;
     }
+
 }
 
 @media (max-width: 1030px){
@@ -1530,6 +1546,11 @@ hr {
     .cadastre{
         margin-left: 5%;
     }
+
+    .cadastro{
+        margin-top: 24%;
+    }
+
   }
 
 
@@ -1563,6 +1584,11 @@ hr {
         top: -140px;
     }
 
+    .cadastro{
+        margin-top: 26%;
+    }
+
+
 }
     
 @media(max-width: 950px){ 
@@ -1573,6 +1599,17 @@ hr {
         width: 200px;
         position: relative;
         top: -140px;
+    }
+
+    .cadastro{
+        right: 24%;
+    }
+
+}
+
+@media (max-width: 890px){
+    .cadastro{
+        margin-top: 28%;
     }
 
 }
@@ -1586,7 +1623,16 @@ hr {
         position: relative;
         top: -140px;
     }
+    .cadastro{
+        right: 26%;
+    }
+}
 
+@media (max-width: 825px){
+    .cadastro{
+        margin-top: 30%;
+        right: 28%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -1627,9 +1673,15 @@ hr {
     .cadastre{
         margin-left: 5%;
     }
-    /* cadastro  */
-    .titulo01{
-        font-size: 50px;
+    .cadastro{
+        margin-top: 33%;
+    }
+  }
+
+  @media (max-width: 717px){
+    .cadastro{
+        right: 32%;
+        margin-top: 35%;
     }
   }
 
@@ -1673,9 +1725,21 @@ hr {
     }
     /* cadastro  */
     .titulo01{
-        font-size: 50px;
-    }
+        font-size: 65px;
+      }
+
+      .cadastro{
+        margin-top: 38%;
+
+      }
   }
+
+@media (max-width: 649px){
+    .cadastro{
+        margin-top: 42%;
+    }
+}
+
 
   @media (max-width: 590px) {
     .titulo {
@@ -1717,7 +1781,12 @@ hr {
     }
     /* cadastro  */
     .titulo01{
-        font-size: 50px;
+        font-size: 65px;
+    }
+
+    .cadastro{
+        right: 35%;
+        margin-top: 45%;
     }
   }
 
@@ -1761,7 +1830,12 @@ hr {
     }
     /* cadastro  */
     .titulo01{
-        font-size: 50px;
+        font-size: 55px;
+    }
+
+    .cadastro{
+        right: 37%;
+        margin-top: 52%;
     }
   }
 
@@ -1805,9 +1879,22 @@ hr {
     }
     /* cadastro  */
     .titulo01{
-        font-size: 50px;
+        font-size: 53px;
+    }
+
+    .cadastro{
+        right: 39%;
+        margin-top: 53%;
     }
   }
+
+@media(max-width: 485px){
+    .cadastro{
+        right: 40%;
+        margin-top: 56%;
+    }
+
+}
 
   @media (max-width: 460px) {
     .titulo {
@@ -1851,9 +1938,14 @@ hr {
     .titulo01{
         font-size: 50px;
     }
+
+    .cadastro{
+        right: 42%;
+        margin-top: 59%;
+    }
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 440px) {
     .titulo {
       font-size: 100px;
       margin-left: 0;
@@ -1866,7 +1958,7 @@ hr {
     }
 
     .login {
-        margin-left: 25%;
+        margin-left: 21%;
         margin-top: 10px;
         top: -100px;
         align-items: center;
@@ -1891,9 +1983,10 @@ hr {
     .cadastre{
         margin-left: 5%;
     }
-    /* cadastro  */
-    .titulo01{
-        font-size: 50px;
+
+    .cadastro{
+        right: 45%;
+        margin-top: 62%;
     }
   }
 
@@ -1903,16 +1996,14 @@ hr {
         margin-left: 24%;
 
     }
+
+    .titulo01{
+        right: 3%;
+    }
     
-    /* cadastro  */
     .cadastro{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        position: relative;
-        top: 2%;
-        left: 8%;
-        margin: 0;
+        right: 49%;
+        margin-top: 65%;
     }
   }
 
@@ -1928,13 +2019,19 @@ hr {
         flex-direction: column;
         width: 200px;
         position: relative;
-        top: 2%;
-        left: 8%;
-        margin: 0;
+        right: 46%;
+        margin-top: 65%;
     }
   }
 
-  @media (max-width: 380px){
+  @media(max-width: 397px){
+    .cadastro{
+        right: 48%;
+        margin-top: 68%;
+    }
+  }
+
+  @media (max-width: 390px){
     .titulo{
         font-size: 90px;
     }
@@ -1943,16 +2040,38 @@ hr {
         margin-left: 20%;
     }
     
+    .cadastro{
+        right: 49%;
+        margin-top: 69%;
+    }
+  }
+
+  @media(max-width:375px){
+    .cadastro{
+        right: 54%;
+        margin-top: 70%;
+    }
   }
 
   @media (max-width: 365px){
     .login{
         margin-left: 18%;
+        margin-top: 10%;
     }
+
+    .titulo01{
+        font-size: 45px;
+    }
+
+    .cadastro{
+        right: 52%;
+        margin-top: 76%;
+    }
+    
   }
 
 
-  @media (max-width: 345px){
+  @media (max-width: 353px){
     /* index  */
 
     .titulo{
@@ -1960,6 +2079,19 @@ hr {
     }
     .login{
         margin-left: 18%;
+    }
+
+    .cadastro{
+        margin-left: 70%;
+        margin-top: 78%;
+    }
+
+    .cadastro input{
+        width: 100%;
+    }
+
+    .botao01 input{
+    margin-left: 10%;
     }
   }
 
@@ -1971,7 +2103,6 @@ hr {
     }
     .login{
         margin-left: 17%;
-        margin-top: 20px;
     }
 
     .login input{
@@ -1981,9 +2112,14 @@ hr {
     .login i{
         margin-top: -5px;
     }
+
+    .cadastro{
+        right: 55%;
+        margin-top: 82%;
+    }
   }
 
-  @media (max-width: 320px){
+  @media (max-width: 330px){
     /* index  */
 
     .titulo{
@@ -1996,7 +2132,7 @@ hr {
     }
   }
 
-  @media (max-width: 315px){
+  @media (max-width: 320px){
     /* index  */
 
     .titulo{
@@ -2006,6 +2142,14 @@ hr {
     .login{
         margin-left: 15%;
         margin-top: 34px;
+    }
+
+    .titulo01{
+        font-size: 43px;
+    }
+
+    .cadastro{
+        margin-top: 85%;
     }
   }
 
