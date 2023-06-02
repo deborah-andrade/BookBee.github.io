@@ -3,11 +3,9 @@ self.addEventListener('install', event => {
         caches.open('my-cache')
         .then(cache => cache.addAll([
             '/index.html',
-            'cadastro.html',
+            '/cadastro.html',
+            '/inicial.html',
             '/cronometro.html',
-            '/detalhedolivro.html',
-            'inicial.html',
-            'pagesearch.html',
             '/css/style.css',
             '/js/script.js'
         ]))
