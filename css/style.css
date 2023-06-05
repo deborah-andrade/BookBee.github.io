@@ -1658,6 +1658,8 @@ hr {
     .cadastro{
         right: 26%;
     }
+
+    
 }
 
 @media (max-width: 825px){
@@ -2071,7 +2073,7 @@ hr {
     }
 
     .tituloLidosRecentes a{
-        margin-right: -55px;
+        margin-right: -30px;
     }
 
     .tituloLidosRecentes i{
@@ -2172,7 +2174,7 @@ hr {
     }
     
     .tituloLivrosFavoritos a{
-            margin-right: -48px;
+            margin-right: -17px;
         }
 
     .tituloLivrosFavoritos i {
@@ -2205,8 +2207,8 @@ hr {
         font-size: 28px;
     }
 
-    .tituloCitacoes{
-        margin-right: -14px;
+    .tituloCitacoes a{
+        margin-right: -17px;
     }
 
     .tituloCitacoes i {
