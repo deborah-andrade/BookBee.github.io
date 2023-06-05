@@ -38,7 +38,7 @@ searchIcon.addEventListener('click', () => {
         searchInput.style.display = 'inline-block';
         searchButton.style.display = 'inline-flex';
         searchSpace.style.display = 'inline-flex'
-        searchSpace.style.width = '200px';
+        searchSpace.style.width = '150%';
         searchSpace.style.height = '50px';
         searchSpace.style.borderRadius = '15px';
     } else {

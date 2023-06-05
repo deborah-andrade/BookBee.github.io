@@ -397,10 +397,6 @@ hr {
 
 }
 
-.lidosRecentes i{
-    display: none;
-}
-
 .tituloLidosRecentes {
     display: flex;
     align-items: center;
@@ -596,7 +592,6 @@ hr {
     margin: 20px;
 
 }
-
 
 /* part of quotes */
 
@@ -2099,16 +2094,24 @@ hr {
 
     }
 
+    .barraDeBusca {
+        width: 15%;
+        position: relative;
+        z-index: 1;
+    }
+
     .menu {
         position: absolute;
     }
 
     .menu ul{
         position: relative;
+        z-index: 1;
     }
     
     .menu li{
         opacity: 0;
+        
     }
 
     hr{
@@ -2116,7 +2119,17 @@ hr {
     }
 
     .menu.active{
+        position: absolute;
         transform: translateX(0);
+        z-index: 1;
+
+    }
+
+    .active{
+        position: absolute;
+        transition: 0.5s ease-in-out;
+        z-index: 2;
+        background-color: var(--second-color);
     }
 
     @keyframes menuLinkFade{
@@ -2154,7 +2167,8 @@ hr {
     }
 
     .lidosRecentes{
-        width: 4o0px;
+        width: 410px;
+        overflow: hidden;
     }
 
     .tituloLidosRecentes {
@@ -2165,6 +2179,10 @@ hr {
 
     .tituloLidosRecentes h3{
         font-size: 28px;
+    }
+
+    .tituloLidosRecentes i{
+        display: none;
     }
 
     .estilizacaoLidos {
@@ -2178,6 +2196,7 @@ hr {
         width: 108px;
         height: 167px;
         border-radius: 10px;
+        z-index: 0;
         overflow: hidden;
     }
 
@@ -2204,6 +2223,98 @@ hr {
 
     }
 
+    .metaDeLeitura {
+        width: 410px;
+        overflow: hidden;
+    }
+
+    .tituloMetaDeLeitura {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloMetaDeLeitura h3{
+        font-size: 28px;
+    }
+
+    .tituloMetaDeLeitura i{
+        display: none;
+    }
+
+    .estilizacaoMeta {
+        margin-left: 0px;
+    }
+
+    .carrosselMeta {
+        width: 410px;
+        overflow: hidden;
+    }
+
+    .carrosselMeta img {
+        width: 108px;
+        height: 167px;
+        margin: 20px;
+    
+    }
+
+    .livrosFavoritos {
+        width: 410px;
+        overflow: hidden;
+    }
+
+    .tituloLivrosFavoritos {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloLivrosFavoritos h3{
+        font-size: 28px;
+    }
+    
+    .tituloLivrosFavoritos i {
+        display: none;
+    }
+
+    .estilizacaoFavoritos{
+        margin-left: 0;
+    }
+
+    .carrosselFavoritos img{
+        width: 108px;
+        height: 167px;
+        margin: 20px;
+    }
+
+    .parteCitacoes {
+        width: 410px;
+        overflow: hidden;
+    }
+
+    .tituloCitacoes {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloCitacoes h3{
+        font-size: 28px;
+    }
+
+    .tituloCitacoes i {
+        display: none;
+    }
+
+    .estilizacaoCitacoes .coteudoCitacao{
+        /* width: 108px;
+        height: 167px; */
+        margin: 20px;
+    }
+
+    .citacoes p{
+        display: none;
+    }
   }
 
   @media (max-width: 405px){
