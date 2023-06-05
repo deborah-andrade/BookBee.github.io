@@ -8,8 +8,8 @@
     "description":"Reading Assistant",
     "icons":[
         {
-            "src": "imagens/1682512674678.png",
-            "sizes": "577x593",
+            "src": "imagens/icon.png",
+            "sizes": "598x598",
             "type": "image/png"
         }
     ]

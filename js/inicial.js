@@ -1,4 +1,15 @@
-  // Seleciona o botão de login pelo ID
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registrado com sucesso');
+      })
+      .catch(error => {
+        console.log('Erro ao registrar o Service Worker:', error);
+      });
+  });
+}
+ // Seleciona o botão de login pelo ID
   var botaoLogin = document.getElementById("botao-login");
 
   // Adiciona um listener de clique ao botão

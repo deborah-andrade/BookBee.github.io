@@ -18,3 +18,22 @@ function updateSlides(carrosselId){
   corrosselSlides[0].style.transform = `translateX(${-slideIndex * slideWidth}px)`;
 }
 
+
+function prevSlideLR(carrosselId) {
+  const slides = document.querySelectorAll('#' + carrosselId + ' .estilizacaoLidos li');
+  slideIndex = (slideIndex + slides.length - 1) % slides.length;
+  updateSlidesLR(carrosselId);
+}
+
+function nextSlideLR(carrosselId) {
+  const slides = document.querySelectorAll('#' + carrosselId + ' .estilizacaoLidos li');
+  slideIndex = (slideIndex + 1) % slides.length;
+  updateSlidesLR(carrosselId);
+}
+
+function updateSlidesLR(carrosselId) {
+  const slides = document.querySelectorAll('#' + carrosselId + ' .estilizacaoLidos li');
+  const slideWidth = slides[0].offsetWidth;
+  const corrosselSlides = document.querySelector('#' + carrosselId + ' .estilizacaoLidos');
+  corrosselSlides.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+}

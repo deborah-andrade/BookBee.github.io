@@ -1,14 +1,3 @@
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registrado com sucesso');
-      })
-      .catch(error => {
-        console.log('Erro ao registrar o Service Worker:', error);
-      });
-  });
-}
 
 function formatarDescricao(descricao){
   const descricaoFormatada = descricao.replace(/<\/?p>/g, '')

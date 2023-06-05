@@ -1,3 +1,58 @@
+function mobileMenu() {
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const menuList = document.querySelector(".menu ul");
+  const menuLinks = document.querySelectorAll(".menu li");
+  const activeClass = "active";
+
+  if (mobileMenu) {
+      handleClick();
+  } else {
+      return 0;
+  }
+
+  function handleClick() {
+      menuList.classList.toggle(activeClass);
+      mobileMenu.classList.toggle(activeClass);
+      animateLinks();
+  }
+
+  function animateLinks() {
+      menuLinks.forEach((link, index) => {
+          link.style.animation
+              ? (link.style.animation = "")
+              : (link.style.animation = `menuLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+      });
+  }
+}
+
+
+const searchIcon = document.querySelector('.barraDeBusca .iconeBusca');
+const searchInput = document.querySelector('.barraDeBusca input');
+const searchButton = document.querySelector('.barraDeBusca button');
+const searchSpace = document.querySelector('.barraDeBusca');
+
+
+searchIcon.addEventListener('click', () => {
+  
+    if (searchInput.style.display === 'none') {
+        searchInput.style.display = 'inline-block';
+        searchButton.style.display = 'inline-flex';
+        searchSpace.style.display = 'inline-flex'
+        searchSpace.style.width = '200px';
+        searchSpace.style.height = '50px';
+        searchSpace.style.borderRadius = '15px';
+    } else {
+        searchInput.style.display = 'none';
+        searchButton.style.display = 'none';
+        searchSpace.style.width = '40px';
+        searchSpace.style.height = '40px';
+        searchSpace.style.borderRadius = '50%';
+        searchSpace.style.textAlign = 'center';
+
+  }
+});
+
+
 const btnBusca = document.getElementById('search')
 const busca = document.getElementById('search')
 const txtprocura = document.getElementById('keyWord')
