@@ -2360,6 +2360,18 @@ hr {
         display: none;
     }
 
+    .bi-caret-right-fill {
+        position: absolute;
+        top: 40%;
+        font-size: 60px;
+        font-weight: bold;
+        color: var(--fourth-color);
+        left: 396px;
+        text-align: right;
+        cursor: pointer;
+        z-index: 1;
+    }
+
 }
 
   @media (max-width: 460px) {
@@ -2758,6 +2770,29 @@ hr {
 
     .citacoes p{
         display: none;
+    }
+    .bi-caret-left-fill {
+        position: absolute;
+        top: 50%;
+        font-size: 60px;
+        font-weight: bold;
+        color: var(--fourth-color);
+        cursor: pointer;
+        left: 9.5%;
+        z-index: 1;
+    }
+
+
+    .bi-caret-right-fill {
+        position: absolute;
+        top:50%;
+        font-size: 60px;
+        font-weight: bold;
+        color: var(--fourth-color);
+        left: 325px;
+        text-align: right;
+        cursor: pointer;
+        z-index: 1;
     }
   }
 
