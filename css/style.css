@@ -1308,6 +1308,39 @@ hr {
     color: var(--main-color);
 }
 
+@media (max-width: 1516px){
+    .metaDeLeitura {
+        width: 1200px;
+        overflow: hidden;
+    }
+
+    .carrosselMeta {
+        width: 1200px;
+        overflow: hidden;
+    }
+
+
+    .livrosFavoritos {
+        width: 1200px;
+        overflow: hidden;
+    }
+
+    .carrosselFavoritos{
+        width: 1200px;
+        overflow: hidden;
+    }
+
+    .coteudoCitacao {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+}
+
 @media (max-width: 1360px){
     .emcima {
         font-family: Inter;
@@ -1623,11 +1656,11 @@ hr {
         margin-top: 24%;
     }
 
-    .barraDeBusca input,
+    /*.barraDeBusca input,
     .barraDeBusca button{
         display: none;
 
-    }
+    }*/
   }
 
 
