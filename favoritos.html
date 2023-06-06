@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json">
     
-    <title>Pagina da Busca</title>
+    
+    <title>Favoritos</title>
 </head>
 <body>
     <header class="headerTP">
@@ -27,15 +28,15 @@
 
         <div class="inicioeUser">
             <div class="inicioEBusca">
-                <h1>Busca</h1>
+                <h1>Todos os Favoritos</h1>
 
-                <form class="search">
-                <div class="barraDeBusca">
-                    <div class="iconeBusca">
-                        <i class="bi bi-search"></i>
-                    </div>
-                        <input type="text" required id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
-                        <button id="search" type="button" >
+                <form >
+                    <div class="barraDeBusca">
+                        <div class="iconeBusca">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <input type="text" id="keyWord" name="keyWord" placeholder="Encontre o livro que você gosta...">
+                        <button id="search" type="button">
                            Buscar
                         </button>
                     </div>
@@ -44,16 +45,17 @@
             </div>
 
             <div class="nomeUser">
-                <a href="#">Nome do Usuario</a>
+                <a class="nome"   href="#">Nome do Usuario</a>
                 <div class="ftPerfil">
-                    <img src="imagens/perfil-de-usuario (1).png" alt="imagem de perfil">
+                    <a href="#">
+                        <img src="imagens/perfil-de-usuario (1).png" alt="imagem de perfil">   
+                    </a>
                 </div>
             </div>
 
         </div>
 
     </header>
-
     <main class="mainTelaPrincipal">
         <div class="menu">
             <ul>
@@ -63,7 +65,7 @@
                     </span>
                     <span class="txt">Home</span>
                 </a></li>
-                <li><a href="inicial.html?#metaDeleitura">
+                <li><a href="inicial.html#metaDeleitura">
                     <span class="icon">
                         <i class="bi bi-trophy"></i>
                     </span>
@@ -77,14 +79,14 @@
                     <span class="txt">Cronômetro</span>
                 </a></li>
                 
-                <li><a href="inicial.html?#livrosFavoritos">
+                <li><a href="favoritos.html">
                     <span class="icon">
                         <i class="bi bi-star"></i>
                     </span>
                     <span class="txt">Favorito</span>
                 </a></li>
                 
-                <li><a href="inicial.html?#parteCitacoes">
+                <li><a href="inicial.html#parteCitacoes">
                     <span class="icon">
                         <i class="bi bi-bookmark-star"></i>
                     </span>
@@ -102,16 +104,32 @@
             <div class="logo">
                 <img src="imagens/1682512674678.png" alt="logo do bookbee">
             </div>
-            
         </div>
-        
-        <div class="resultadoPesquisa">
-            <ul id="livros" class="resultGrid">
 
+        <section class="favoritos">
+            <ul id="livros" class="resultfavoritos">
+                <li class="livrosFavoritosTodos" onclick="exibirDetalheDoLivro('iUGhEAAAQBAJ')">
+                    <img src="http://books.google.com/books/content?id=iUGhEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="">
+                    
+                </li>
+                <li class="livrosFavoritosTodos" onclick="exibirDetalheDoLivro('131KDwAAQBAJ')">
+                    <img src="http://books.google.com/books/content?id=131KDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api alt=">
+                    
+                </li>
+                <li class="livrosFavoritosTodos" onclick="exibirDetalheDoLivro('L3yzEAAAQBAJ')">
+                   <img src="http://books.google.com/books/content?id=L3yzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="">
+                </li>
+                <li class="livrosFavoritosTodos" onclick="exibirDetalheDoLivro('XnWzEAAAQBAJ')">
+                   <img src="http://books.google.com/books/content?id=XnWzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="">
+                </li>
+                <li class="livrosFavoritosTodos vazia">
+                    <a href="#"><i class="bi bi-plus-lg"></i></a>
+                </li>
             </ul>
-        </div>
-            <script src="js/busca.js"></script>
-            <script src="js/menuMobile.js"></script>
+        </section>
     </main>
+    <script src="js/menuMobile.js"></script>
+    <script src="js/busca.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

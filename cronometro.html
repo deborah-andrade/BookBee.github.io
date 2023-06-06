@@ -18,6 +18,11 @@
             </div>
         </div>
 
+        <div onclick="mobileMenu()" class="mobile-menu" id="mobile-menu">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+        </div>
+
         <div class="inicioeUser">
             <div class="inicioEBusca">
                 <h1>Cronômetro</h1>
@@ -70,7 +75,7 @@
                     <span class="txt">Cronômetro</span>
                 </a></li>
                 
-                <li><a href="#">
+                <li><a href="inicial.html?#livrosFavoritos">
                     <span class="icon">
                         <i class="bi bi-star"></i>
                     </span>
@@ -137,9 +142,32 @@
             </div>
 
         </section>
+
+        <section class="cronometroMobile">
+            <div class="container">
+                <div class="watch">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <span class='text min'>0 :</span>
+                            <span class='text sec'>&nbsp;0 :</span>
+                            <span class='text msec'>&nbsp;0</span>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class='btn reset hidden'>Reset</button>
+                        <button class='btn play'>Play</button>
+                        <button class='btn lap hidden'>Lap</button>
+                    </div>
+                    <ul class="laps">
+                        <button class="lap-clear-btn hidden">Clear All</button>
+                    <ul>
+                </div>
+            </div>
+        </section>
         
     </main>
     <script src="js/cronometro.js"></script>
     <script src="js/busca.js"></script>
+    <script src="js/menuMobile.js"></script>
 </body>
 </html>
