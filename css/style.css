@@ -1308,6 +1308,104 @@ hr {
     color: var(--main-color);
 }
 
+/* tela 404  */
+
+.quatroZeroQuatro {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.ceraDeAbelha {
+    width: 300px;
+}
+.ceraDeAbelha.um {
+    display: flex;
+    overflow: hidden;
+}
+
+.ceraDeAbelha.um img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+}
+
+.QZQ{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numeroErro{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.numeroErro h1{
+    color: var(--main-color);
+    font-size: 300px;
+    margin: 0;
+}
+.numeroErro img{
+    width: 300px;
+    height: 300px;
+}
+
+.textoError{
+    width: 450px;
+    margin-left: 90px;
+    font-size: 20px;
+    color: var(--third-color);
+
+}
+
+.ceraDeAbelha.dois img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+}
+
+.abelhaPasseando{
+    width: 900px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.abelha{
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 32px;
+    animation: passeando 5s linear infinite;
+}
+
+
+@keyframes passeando {
+    0% {
+        right: -32px;
+        bottom: 0;
+    }
+    25% {
+        right: 25%;
+        bottom: 20px;
+    }
+    50% {
+        right: 50%;
+        bottom: 0;
+    }
+    75% {
+        right: 75%;
+        bottom: 20px;
+    }
+    100% {
+        right: 100%;
+        bottom: 0;
+    }
+}
+
 @media (max-width: 1516px){
     .metaDeLeitura {
         width: 1200px;
@@ -1785,6 +1883,50 @@ hr {
         right: 24%;
     }
 
+
+    /* tela 404   */
+
+    .quatroZeroQuatro {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .ceraDeAbelha img{
+        display: none;
+    }
+
+    .QZQ{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .numeroErro{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .numeroErro h1{
+        color: var(--main-color);
+        font-size: 200px;
+        margin: 0;
+    }
+    .numeroErro img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .textoError{
+        margin: 0;
+        width: 350px;
+        font-size: 20px;
+        color: var(--third-color);
+    }
+
+    .abelhaPasseando {
+        width: 350px;
+    }
 }
 
 @media (max-width: 890px){

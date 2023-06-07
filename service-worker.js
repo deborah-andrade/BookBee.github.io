@@ -4,6 +4,7 @@ self.addEventListener('install', async event => {
         await cache.add('inicial.html');
         await cache.add( 'css/style.css');
         await cache.add('js/script.js');
+        await cache.add('404.html');
         console.log('arquivo adicionados ao cache')
     } catch (error) {
         console.log("falha ao adicionar ao cache:", error);
