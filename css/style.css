@@ -1480,6 +1480,16 @@ hr {
         text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
     }
     
+    .cronometro{
+  
+        margin-top: 100px;
+        width: 800px;
+        margin-left: 50px;
+    }
+    
+    .visorCronometro{
+        width: 800px;
+    }
 
 }
 
@@ -1499,6 +1509,19 @@ hr {
         font-size: 35px;
         /* ou defina o tamanho de fonte desejado */
         text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .headerTP {
+        justify-content: flex-start;
+    }
+
+    .bookbeeTP{
+        margin-right: 10px;
+    }
+
+    .inicioeUser {
+        width: 1040px;
+        height: 246px;
     }
     
     .menu .txt{
@@ -1626,6 +1649,57 @@ hr {
         text-shadow: 12px 9px 2px rgba(0, 0, 0, 0.1);
     }
 
+    .headerTP {
+        width: 1182px;
+        justify-content: flex-start;
+    }
+
+    .bookbeeTP{
+        margin-right: 10px;
+    }
+
+    .inicioeUser {
+        width: 1040px;
+        height: 246px;
+    }
+
+    .lidosRecentes {
+        width: 1080px;
+    }
+
+    .metaDeLeitura {
+        width: 1080px;
+    }
+
+    .carrosselMeta{
+        width: 1080px;
+    }
+
+    .carrosselSlides {
+        width: 1080px;
+    }
+
+    .livrosFavoritos {
+        width: 1080px;
+    }
+
+    .carrosselFavoritos{
+        width: 1080px;
+    }
+
+    .parteCitacoes {
+        width: 1080px;
+    }
+
+    /* cronometro  */
+    .cronometro{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+    }
+    .visorCronometro{
+        width: 700px;
+    }
     
 }
 
@@ -1824,11 +1898,14 @@ hr {
         margin-top: 24%;
     }
 
-    /*.barraDeBusca input,
-    .barraDeBusca button{
-        display: none;
+    .cronometro{
+        width: 650px;
 
-    }*/
+    }
+    
+    .visorCronometro{
+        width: 650px;
+    }
   }
 
 
@@ -1883,6 +1960,295 @@ hr {
         right: 24%;
     }
 
+    .headerTP{
+        width: 920px;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bookbeeTP{
+        display: none;
+    }
+
+    .inicioeUser {
+        background-color: var(--second-color);
+        width: 924px;
+        height: 100px;
+        display: flex;
+        justify-content: right;
+        align-items: end;
+    }
+
+    .inicioEBusca{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicioEBusca h1{
+        display: none;
+    }
+
+    .iconeBusca{
+        margin-bottom: 30px;
+    }
+
+    .iconeBusca i {
+        font-size: 2rem;
+    }
+
+    .nomeUser{
+        width: 64px;
+        height: 64px;
+        margin-right: 26px;
+        margin-bottom: 0;
+    }
+
+    .nomeUser .nome{
+        display: none;
+    }
+
+    .barraDeBusca input,
+    .barraDeBusca button{
+        display: none;
+
+    }
+
+    .barraDeBusca {
+        width: 15%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .menu ul{
+        position: relative;
+        z-index: 1;
+    }
+    
+    .menu li{
+        opacity: 0;
+        
+    }
+
+    hr{
+        display: none;
+    }
+
+    
+    .menu.active{
+        position: absolute;
+        transform: translateX(0);
+        z-index: 1;
+
+    }
+
+    .active{
+        position: relative;
+        width: 120px;
+        height: 400px;
+        transition: 0.5s ease-in-out;
+        z-index: 2;
+        background-color: var(--second-color);
+    }
+
+    @keyframes menuLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu{
+        display: block;
+        height: 20px;
+        margin-left: 50px;
+        position: relative;
+    }
+
+    .mobile-menu.active.linha1{
+        transform: rotate(-45deg) translate(-5px, 0px);
+        margin: 10px;
+    }
+    .mobile-menu.active.linha2{
+        width: 32px;
+        transform: rotate(45deg) translate(-3px, -8px);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mainTelaPrincipal {
+        display: block;
+    }
+
+    .lidosRecentes{
+        width: 910px;
+        overflow: hidden;
+    }
+
+    .tituloLidosRecentes {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloLidosRecentes h3{
+        font-size: 28px;
+    }
+
+    .tituloLidosRecentes i{
+        display: none;
+    }
+
+    .estilizacaoLidos {
+        margin: 10px 0;
+        overflow: hidden;
+        height: 300px;
+      
+    }
+    
+    .estilizacaoLidos li img{
+        width: 108px;
+        height: 167px;
+        border-radius: 10px;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .estilizacaoLidos li:hover img {
+        margin-top: 0;
+        margin-right: 0;
+    }
+   
+    .estilizacaoLidos li{
+        width: 162px;
+        height: 196px;
+    }
+
+    .informacaoLivro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 162px;
+        height: 196px;
+        background-color: var(--main-color);
+        color: var(--third-color);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px; 
+
+    }
+
+    .metaDeLeitura {
+        width: 910px;
+        overflow: hidden;
+    }
+
+    .tituloMetaDeLeitura {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloMetaDeLeitura h3{
+        font-size: 28px;
+    }
+
+    .tituloMetaDeLeitura{
+        margin-right: -19px;
+    }
+
+    .tituloMetaDeLeitura i{
+        display: none;
+    }
+
+    .estilizacaoMeta {
+        margin-left: 0px;
+    }
+
+    .carrosselMeta {
+        width: 910px;
+        overflow: hidden;
+    }
+
+    .carrosselMeta img {
+        width: 108px;
+        height: 167px;
+        margin: 20px;
+    
+    }
+
+    .livrosFavoritos {
+        width: 910px;
+        overflow: hidden;
+    }
+
+    .tituloLivrosFavoritos {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloLivrosFavoritos h3{
+        font-size: 28px;
+    }
+    
+    .tituloLivrosFavoritos i {
+        display: none;
+    }
+
+    .estilizacaoFavoritos{
+        margin-left: 0;
+    }
+
+    .carrosselFavoritos img{
+        width: 108px;
+        height: 167px;
+        margin: 20px;
+    }
+
+    .parteCitacoes {
+        width: 910px;
+        overflow: hidden;
+    }
+
+    .tituloCitacoes {
+        margin: 0 32px 0 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tituloCitacoes h3{
+        font-size: 28px;
+    }
+
+    .tituloCitacoes{
+        margin-right: -1px;
+    }
+
+    .tituloCitacoes i {
+        display: none;
+    }
+
+    .estilizacaoCitacoes .coteudoCitacao{
+        /* width: 108px;
+        height: 167px; */
+        margin: 20px;
+    }
+
+    .citacoes p{
+        display: none;
+    }
 
     /* tela 404   */
 
