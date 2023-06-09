@@ -1960,6 +1960,8 @@ hr {
         right: 24%;
     }
 
+    /* pagina inicial */
+
     .headerTP{
         width: 920px;
         height: 90px;
@@ -2011,15 +2013,21 @@ hr {
     }
 
     .barraDeBusca input,
-    .barraDeBusca button{
+    .barraDeBusca button {
         display: none;
-
     }
 
+    
     .barraDeBusca {
         width: 15%;
         position: relative;
         z-index: 1;
+        margin-right: 10px;
+    }
+
+    .barraDeBusca button {
+        text-align: center;
+        padding: auto;
     }
 
     .menu {
@@ -2132,8 +2140,8 @@ hr {
     }
    
     .estilizacaoLidos li{
-        width: 162px;
-        height: 196px;
+        width: 262px;
+        height: 296px;
     }
 
     .informacaoLivro {
@@ -2164,10 +2172,6 @@ hr {
         font-size: 28px;
     }
 
-    .tituloMetaDeLeitura{
-        margin-right: -19px;
-    }
-
     .tituloMetaDeLeitura i{
         display: none;
     }
@@ -2182,8 +2186,8 @@ hr {
     }
 
     .carrosselMeta img {
-        width: 108px;
-        height: 167px;
+        width: 208px;
+        height: 267px;
         margin: 20px;
     
     }
@@ -2212,8 +2216,8 @@ hr {
     }
 
     .carrosselFavoritos img{
-        width: 108px;
-        height: 167px;
+        width: 208px;
+        height: 267px;
         margin: 20px;
     }
 
@@ -2241,8 +2245,6 @@ hr {
     }
 
     .estilizacaoCitacoes .coteudoCitacao{
-        /* width: 108px;
-        height: 167px; */
         margin: 20px;
     }
 
@@ -2300,6 +2302,72 @@ hr {
         margin-top: 28%;
     }
 
+    /* pagina inicial  */
+
+    .headerTP {
+        width: 720px;
+    }
+    
+    .lidosRecentes {
+        width: 810px;
+    }
+    
+    .estilizacaoLidos li img{
+        width: 98px;
+        height: 157px;
+    }
+   
+    .estilizacaoLidos li{
+        width: 162px;
+        height: 196px;
+    }
+
+    .informacaoLivro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 162px;
+        height: 196px;
+        background-color: var(--main-color);
+        color: var(--third-color);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px; 
+
+    }
+
+    .metaDeLeitura {
+        width: 810px;
+        overflow: hidden;
+    }
+
+    .estilizacaoMeta {
+        margin-left: 0px;
+    }
+
+    .carrosselMeta {
+        width: 810px;
+    }
+
+    .carrosselMeta img {
+        width: 108px;
+        height: 167px;
+        margin: 20px;
+    
+    }
+
+    .livrosFavoritos {
+        width: 810px;
+    }
+
+    .carrosselFavoritos img{
+        width: 108px;
+        height: 167px;
+    }
+
+    .parteCitacoes {
+        width: 810px;
+    }
+
 }
     
 @media(max-width: 870px){ 
@@ -2323,6 +2391,60 @@ hr {
         margin-top: 30%;
         right: 28%;
     }
+
+    /* pagina inicial */
+
+    .lidosRecentes {
+        width: 710px;
+    }
+
+    .estilizacaoLidos li{
+        width: 142px;
+    }
+
+    /* pagina de informações */
+
+    .informacaoLivro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 162px;
+        height: 196px;
+        background-color: var(--main-color);
+        color: var(--third-color);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px; 
+
+    }
+
+    /* pagina inicial  */
+
+    .metaDeLeitura {
+        width: 710px;
+    }
+
+    .carrosselMeta {
+        width: 710px;
+    }
+
+    .carrosselMeta img {
+        width: 98px;
+        height: 157px;    
+    }
+
+    .livrosFavoritos {
+        width: 710px;
+    }
+
+    .carrosselFavoritos img{
+        width: 98px;
+        height: 157px;
+    }
+
+    .parteCitacoes {
+        width: 710px;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -2372,6 +2494,50 @@ hr {
     .cadastro{
         right: 32%;
         margin-top: 35%;
+    }
+
+    /* pagina inicial  */
+
+    .lidosRecentes {
+        width: 670px;
+    }
+   
+    .estilizacaoLidos li{
+        width: 132px;
+        height: 156px;
+    }
+
+    /* pagina de informação  */
+
+    .informacaoLivro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 162px;
+        height: 196px;
+        background-color: var(--main-color);
+        color: var(--third-color);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px; 
+
+    }
+
+    /* pagina inicial  */
+
+    .metaDeLeitura {
+        width: 670px;
+    }
+
+    .carrosselMeta {
+        width: 670px;
+    }
+
+    .livrosFavoritos {
+        width: 670px;
+    }
+
+    .parteCitacoes {
+        width: 670px;
     }
   }
 
@@ -2428,6 +2594,51 @@ hr {
     .cadastro{
         margin-top: 42%;
     }
+
+    /* pagina inicial  */
+
+    .headerTP {
+        width: 520px;
+    }
+
+    .lidosRecentes {
+        width: 610px;
+    }
+
+    /* pagina de informação  */
+
+    .informacaoLivro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 162px;
+        height: 196px;
+        background-color: var(--main-color);
+        color: var(--third-color);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 50px; 
+
+    }
+
+    /* pagina inicial  */
+
+    .metaDeLeitura {
+        width: 610px;
+    }
+
+    .carrosselMeta {
+        width: 610px;
+    }
+
+    .livrosFavoritos {
+        width: 610px;
+    
+    }
+
+    .parteCitacoes {
+        width: 610px;
+    }
+
 }
 
 
@@ -2982,7 +3193,6 @@ hr {
     /* index  */
     .login{
         margin-left: 24%;
-
     }
 
     .titulo01{
@@ -2994,132 +3204,11 @@ hr {
         margin-top: 65%;
     }
 
+    /* pagina inicial  */
+
     .headerTP{
         width: 420px;
         height: 90px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .bookbeeTP{
-        display: none;
-    }
-
-    .inicioeUser {
-        background-color: var(--second-color);
-        width: 224px;
-        height: 100px;
-        display: flex;
-        justify-content: right;
-        align-items: end;
-    }
-
-    .inicioEBusca{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .inicioEBusca h1{
-        display: none;
-    }
-
-    .iconeBusca{
-        margin-bottom: 30px;
-    }
-
-    .iconeBusca i {
-        font-size: 2rem;
-    }
-
-    .nomeUser{
-        width: 64px;
-        height: 64px;
-        margin-right: 26px;
-        margin-bottom: 0;
-    }
-
-    .nomeUser .nome{
-        display: none;
-    }
-
-    .barraDeBusca input,
-    .barraDeBusca button{
-        display: none;
-
-    }
-
-    .barraDeBusca {
-        width: 15%;
-        position: relative;
-        z-index: 1;
-    }
-
-    .menu {
-        position: absolute;
-    }
-
-    .menu ul{
-        position: relative;
-        z-index: 1;
-    }
-    
-    .menu li{
-        opacity: 0;
-        
-    }
-
-    hr{
-        display: none;
-    }
-
-    .menu.active{
-        position: absolute;
-        transform: translateX(0);
-        z-index: 1;
-
-    }
-
-    .active{
-        position: relative;
-        transition: 0.5s ease-in-out;
-        z-index: 2;
-        background-color: var(--second-color);
-    }
-
-    @keyframes menuLinkFade{
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .mobile-menu{
-        display: block;
-        height: 20px;
-        margin-left: 50px;
-    }
-
-    .mobile-menu.active.linha1{
-        transform: rotate(-45deg) translate(-5px, 0px);
-        margin: 10px;
-    }
-    .mobile-menu.active.linha2{
-        width: 32px;
-        transform: rotate(45deg) translate(-3px, -8px);
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .mainTelaPrincipal {
-        display: block;
     }
 
     .lidosRecentes{
@@ -3366,84 +3455,6 @@ hr {
         margin-bottom: 0;
     }
 
-    .nomeUser .nome{
-        display: none;
-    }
-
-    .barraDeBusca input,
-    .barraDeBusca button{
-        display: none;
-
-    }
-
-    .barraDeBusca {
-        width: 15%;
-        position: relative;
-        z-index: 1;
-    }
-
-    .menu {
-        position: absolute;
-    }
-
-    .menu ul{
-        position: relative;
-        z-index: 1;
-    }
-    
-    .menu li{
-        opacity: 0;
-        
-    }
-
-    hr{
-        display: none;
-    }
-
-    .menu.active{
-        position: absolute;
-        transform: translateX(0);
-        z-index: 1;
-
-    }
-
-    .active{
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        z-index: 2;
-        background-color: var(--second-color);
-    }
-
-    @keyframes menuLinkFade{
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .mobile-menu{
-        display: block;
-        height: 20px;
-        margin-left: 50px;
-    }
-
-    .mobile-menu.active.linha1{
-        transform: rotate(-45deg) translate(-5px, 0px);
-        margin: 10px;
-    }
-    .mobile-menu.active.linha2{
-        width: 32px;
-        transform: rotate(45deg) translate(-3px, -8px);
-    }
-
-    .logo {
-        display: none;
-    }
-
     .mainTelaPrincipal {
         display: block;
     }
@@ -3525,7 +3536,7 @@ hr {
     }
 
     .tituloMetaDeLeitura a{
-        margin-right: -30px;
+        margin-right: -28px;
     }
 
     .tituloMetaDeLeitura i{
@@ -3637,175 +3648,14 @@ hr {
         margin-top: 69%;
     }
 
+    /* pagina inicial  */
+
     .headerTP{
         width: 393px;
-        height: 90px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .bookbeeTP{
-        display: none;
-    }
-
-    .inicioeUser {
-        background-color: var(--second-color);
-        width: 224px;
-        height: 100px;
-        display: flex;
-        justify-content: right;
-        align-items: end;
-    }
-
-    .inicioEBusca{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .inicioEBusca h1{
-        display: none;
-    }
-
-    .iconeBusca{
-        margin-bottom: 30px;
-    }
-
-    .iconeBusca i {
-        font-size: 2rem;
-    }
-
-    .nomeUser{
-        width: 64px;
-        height: 64px;
-        margin-right: 26px;
-        margin-bottom: 0;
-    }
-
-    .nomeUser .nome{
-        display: none;
-    }
-
-    .barraDeBusca input,
-    .barraDeBusca button{
-        display: none;
-
-    }
-
-    .barraDeBusca {
-        width: 15%;
-        position: relative;
-        z-index: 1;
-    }
-
-    .menu {
-        position: absolute;
-    }
-
-    .menu ul{
-        position: relative;
-        z-index: 1;
-    }
-    
-    .menu li{
-        opacity: 0;
-        
-    }
-
-    hr{
-        display: none;
-    }
-
-    .menu.active{
-        position: absolute;
-        transform: translateX(0);
-        z-index: 1;
-
-    }
-
-    .active{
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        z-index: 2;
-        background-color: var(--second-color);
-    }
-
-    @keyframes menuLinkFade{
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .mobile-menu{
-        display: block;
-        height: 20px;
-        margin-left: 50px;
-    }
-
-    .mobile-menu.active.linha1{
-        transform: rotate(-45deg) translate(-5px, 0px);
-        margin: 10px;
-    }
-    .mobile-menu.active.linha2{
-        width: 32px;
-        transform: rotate(45deg) translate(-3px, -8px);
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .mainTelaPrincipal {
-        display: block;
     }
 
     .lidosRecentes{
         width: 410px;
-        overflow: hidden;
-    }
-
-    .tituloLidosRecentes {
-        margin: 0 32px 0 28px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .tituloLidosRecentes h3{
-        font-size: 28px;
-    }
-
-    .tituloLidosRecentes a{
-        margin-right: -30px;
-    }
-
-    .tituloLidosRecentes i{
-        display: none;
-    }
-
-    .estilizacaoLidos {
-        margin: 10px 0;
-        overflow: hidden;
-        height: 300px;
-      
-    }
-    
-    .estilizacaoLidos li img{
-        width: 108px;
-        height: 167px;
-        border-radius: 10px;
-        z-index: 0;
-        overflow: hidden;
-    }
-
-    .estilizacaoLidos li:hover img {
-        margin-top: 0;
-        margin-right: 0;
     }
    
     .estilizacaoLidos li{
@@ -3828,34 +3678,10 @@ hr {
 
     .metaDeLeitura {
         width: 410px;
-        overflow: hidden;
-    }
-
-    .tituloMetaDeLeitura {
-        margin: 0 32px 0 28px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .tituloMetaDeLeitura h3{
-        font-size: 28px;
-    }
-
-    .tituloMetaDeLeitura a{
-        margin-right: -30px;
-    }
-
-    .tituloMetaDeLeitura i{
-        display: none;
-    }
-
-    .estilizacaoMeta {
-        margin-left: 0px;
     }
 
     .carrosselMeta {
         width: 410px;
-        overflow: hidden;
     }
 
     .carrosselMeta img {
@@ -3867,29 +3693,6 @@ hr {
 
     .livrosFavoritos {
         width: 410px;
-        overflow: hidden;
-    }
-
-    .tituloLivrosFavoritos {
-        margin: 0 32px 0 28px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .tituloLivrosFavoritos h3{
-        font-size: 28px;
-    }
-
-    .tituloLivrosFavoritos a {
-        margin-right: -28px;
-    }
-    
-    .tituloLivrosFavoritos i {
-        display: none;
-    }
-
-    .estilizacaoFavoritos{
-        margin-left: 0;
     }
 
     .carrosselFavoritos img{
@@ -3900,36 +3703,8 @@ hr {
 
     .parteCitacoes {
         width: 410px;
-        overflow: hidden;
     }
 
-    .tituloCitacoes {
-        margin: 0 32px 0 28px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .tituloCitacoes h3{
-        font-size: 28px;
-    }
-
-    .tituloCitacoes a{
-        margin-right: -28px;
-    }
-
-    .tituloCitacoes i {
-        display: none;
-    }
-
-    .estilizacaoCitacoes .coteudoCitacao{
-        /* width: 108px;
-        height: 167px; */
-        margin: 20px;
-    }
-
-    .citacoes p{
-        display: none;
-    }
   }
 
   @media(max-width:375px){

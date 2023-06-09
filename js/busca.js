@@ -1,26 +1,28 @@
-const searchIcon = document.querySelector('.barraDeBusca .iconeBusca');
-const searchInput = document.querySelector('.barraDeBusca input');
+const searchIcon = document.querySelector('.iconeBusca');
+const searchInput = document.querySelector('input');
 const searchButton = document.querySelector('.barraDeBusca button');
 const searchSpace = document.querySelector('.barraDeBusca');
 
 
 searchIcon.addEventListener('click', () => {
-  
+
+  if(window.innerWidth <= 950){
     if (searchInput.style.display === 'none') {
         searchInput.style.display = 'inline-block';
-        searchButton.style.display = 'inline-flex';
-        searchSpace.style.display = 'inline-flex'
+        searchButton.style.display = 'flex';
+        searchButton.style.justifyContent = 'center';
+        searchButton.style. alignItems= 'center';
         searchSpace.style.width = '150%';
-        searchSpace.style.height = '50px';
-        searchSpace.style.borderRadius = '15px';
+        searchSpace.style.height = 'auto';
+        searchSpace.style.borderRadius = '0';
     } else {
         searchInput.style.display = 'none';
         searchButton.style.display = 'none';
         searchSpace.style.width = '40px';
         searchSpace.style.height = '40px';
         searchSpace.style.borderRadius = '50%';
-        searchSpace.style.textAlign = 'center';
-
+  }
+    
   }
 });
 
