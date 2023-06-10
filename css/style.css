@@ -319,7 +319,7 @@ input::placeholder {
 
 .ftPerfil {
     width: 64px;
-    height: 68.8px;
+    height: 64px;
 }
 
 .ftPerfil i {
@@ -1739,6 +1739,11 @@ hr {
     .titulo01{
         font-size: 85px;
     }
+
+    .dataeAnotacoes{
+        width: 330px;
+       
+    }
 }
 
 
@@ -1811,6 +1816,34 @@ hr {
         width: 200px;
         position: relative;
         top: -250px;
+    }
+
+    .headerTP{
+        width: 1082px;
+    }
+
+    .inicioeUser{
+        width: 830px;
+    }
+
+    .dataeAnotacoes{
+        padding: 0;
+    }
+    .livroEposicaos{
+        width: 550px;
+    }
+
+    .detalheSobrelivro {
+        width: 550px;
+    }
+
+    .detalheSobrelivro img{
+        margin-left: 25px;
+        width: 159px;
+    }
+
+    .detalhePosicao{
+        margin: 103px 0px 0px 45px;
     }
 }
 
@@ -2333,17 +2366,6 @@ hr {
         color: var(--fourth-color);
     }
   
-    @keyframes neon-glow {
-        0%{
-            opacity: 0.8;
-            box-shadow: 0 0 5px var(--fourth-color), 0 0 20px var(--fourth-color);
-        }
-        100% {
-            opacity: 1;
-            box-shadow: 0 0 20px var(--fourth-color), 0 0 40px var(--fourth-color);;
-        }
-        
-    }
 
     /* pagina do perfil do usuario  */
     .perfilHeader{
@@ -2438,6 +2460,14 @@ hr {
         cursor: pointer;
     }
 
+    /* pagina favoritos  */
+
+    .resultfavoritos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 890px){
@@ -2510,6 +2540,28 @@ hr {
     .parteCitacoes {
         width: 810px;
     }
+
+    /* pagina de informaçoes do livro  */
+
+    .dataeAnotacoes{
+        width: 430px;
+     }
+
+     .livroEposicaos{
+         width: 450px;
+     }
+ 
+     .detalheSobrelivro {
+         width: 450px;
+     }
+
+     .detalheSobrelivro img{
+         width: 159px;
+     }
+ 
+     .detalhePosicao{
+         margin: 103px 0px 0px 25px;
+     }
 
 }
     
@@ -2586,6 +2638,14 @@ hr {
 
     .parteCitacoes {
         width: 710px;
+    }
+
+    /* pagina de busca  */
+
+    .resultGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -3048,6 +3108,7 @@ hr {
         display: block;
         height: 20px;
         margin-left: 50px;
+        position: relative;
     }
 
     .mobile-menu.active.linha1{
@@ -3563,22 +3624,13 @@ hr {
     .footerMobile a.active i {
         color: var(--fourth-color);
     }
-  
-    @keyframes neon-glow {
-        0%{
-            opacity: 0.8;
-            box-shadow: 0 0 5px var(--fourth-color), 0 0 20px var(--fourth-color);
-        }
-        100% {
-            opacity: 1;
-            box-shadow: 0 0 20px var(--fourth-color), 0 0 40px var(--fourth-color);;
-        }
-        
+
+    /* pagina de busca  */
+    
+    .conteudoLivros {
+        width: 300px;
     }
-
-
-
-
+    
   }
 
   @media (max-width: 405px){
