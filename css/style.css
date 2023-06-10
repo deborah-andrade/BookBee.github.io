@@ -2452,12 +2452,19 @@ hr {
     }
      
     .opcoesPerfil div{
-        background-image: linear-gradient(to bottom, var(--fifth-color), var(--third-color));
+        background-image: linear-gradient(to bottom, var(--fifth-color), var(--main-color));
         width: 400px;
         height: 80px;
         border-radius: 15px;
-        color: var(--main-color);
         cursor: pointer;
+        color: var(--second-color);
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .opcoesPerfil div i {
+        padding: 20px;
     }
 
     /* pagina favoritos  */
@@ -2648,6 +2655,13 @@ hr {
         align-items: center;
     }
 
+    /* pagina de detalhes  */
+
+    .linksParaCriaNotas div{
+        width:216px;
+    }
+
+
 }
 
 @media (max-width: 750px) {
@@ -2690,6 +2704,23 @@ hr {
     }
     .cadastro{
         margin-top: 33%;
+    }
+
+    /* pagina de detalhes  */
+
+    .dataeAnotacoes{
+        width: 340px;
+    }
+    .livroEposicaos{
+        width: 400px;
+    }
+
+    .detalheSobrelivro{
+        width: 450px;
+    }
+
+    .detalhePosicao{
+        width: 400px;
     }
   }
 
@@ -2790,6 +2821,50 @@ hr {
       .cadastro{
         margin-top: 38%;
 
+      }
+
+      /* pagina de detalhes  */
+
+    .coteudoTeladeInformacao {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+      }
+
+      .livroEposicaos {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .detalheSobrelivro {
+        width: 500px;
+      }
+
+      .detalhePosicao {
+        margin: 53px 0px  0px 0px;
+        width: 500px;
+      }
+
+      .dataeAnotacoes {
+        width: 500px;
+        height: 570px;
+        padding-bottom: 80px;
+      }
+
+      .datas {
+        height: 180px;
+      }
+
+      .dataInicio input[type="date"],
+      .dataFim input[type="date"]{
+        width: 300px;
+      }
+
+      .linksParaCriaNotas div{
+        width: 300px;
       }
   }
 
@@ -2892,6 +2967,24 @@ hr {
         right: 35%;
         margin-top: 45%;
     }
+
+        /* pagina detalhe  */
+
+        .coteudoTeladeInformacao {
+            width: 500px;
+          }
+    
+          .livroEposicaos {
+            width: 400px;
+          }
+          .detalheSobrelivro {
+            width: 400px;
+          }
+    
+          .detalhePosicao {
+            margin: 53px 0px  0px 0px;
+            width: 400px;
+          }
   }
 
   @media (max-width: 530px) {
