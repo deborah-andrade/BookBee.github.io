@@ -24,3 +24,21 @@ function mobileMenu() {
         });
     }
   }
+
+const footer = document.querySelector('.footerMobile');
+
+footer.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        footer.querySelectorAll('a').forEach(link => {
+            link.classList.remove('active');
+        });
+
+        link.classList.add('active');
+    });
+});
+
+const setaParaVolta = document.querySelector('.setaParaVolta');
+
+setaParaVolta.addEventListener('click', () => {
+    history.back();
+});

@@ -661,6 +661,10 @@ hr {
     margin: 0 15px;
 }
 
+.footerMobile{
+    visibility: hidden;
+}
+
 /* search page  */
 
 .resultadoPesquisa {
@@ -1404,6 +1408,8 @@ hr {
         right: 100%;
         bottom: 0;
     }
+
+
 }
 
 @media (max-width: 1516px){
@@ -2295,6 +2301,143 @@ hr {
     .abelhaPasseando {
         width: 350px;
     }
+
+    /* menu mobile  */
+
+    .footerMobile{
+        border-radius: 15px;
+        width: 98%;
+        height: 80px;
+        visibility: visible;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--second-color);
+        z-index: 1;
+        text-align: center;
+     
+    }
+
+    .footerMobile a{
+        position: relative;
+        padding: 0 26px;
+        font-size: 50px;
+    }
+
+    .footerMobile a i{
+        color: var(--fifth-color);
+    }
+
+    .footerMobile a.active i {
+        color: var(--fourth-color);
+    }
+  
+    @keyframes neon-glow {
+        0%{
+            opacity: 0.8;
+            box-shadow: 0 0 5px var(--fourth-color), 0 0 20px var(--fourth-color);
+        }
+        100% {
+            opacity: 1;
+            box-shadow: 0 0 20px var(--fourth-color), 0 0 40px var(--fourth-color);;
+        }
+        
+    }
+
+    /* pagina do perfil do usuario  */
+    .perfilHeader{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .barraDeBusca{
+        margin-top: 20px;
+    }
+
+    .setaParaVolta{
+        font-size: 32px;
+        color: var(--third-color);
+    }
+
+    .PerfilMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .userPerfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ftUser a img{
+        width: 128px;
+        height: 128px;
+    }
+
+    .nomeUserPerfil{
+        color: var(--third-color);
+    }
+
+    .infoPerfil{
+        width: 400px;
+        height: 100px;
+    }
+    .infoPerfil ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .infoPerfil ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--third-color);
+    }
+
+    .infoPerfil ul li:first-child{
+        border-right: solid var(--third-color);
+        padding-right: 30px;
+    }
+
+    .infoPerfil ul li:last-child{
+        border-left: solid var(--third-color);
+        padding-left: 30px;
+    }
+
+    .infoPerfil ul li p:first-child{
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .infoPerfil ul li p:last-child{
+        margin: 0;
+    }
+
+    .opcoesPerfil{
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+     
+    .opcoesPerfil div{
+        background-image: linear-gradient(to bottom, var(--fifth-color), var(--third-color));
+        width: 400px;
+        height: 80px;
+        border-radius: 15px;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
 }
 
 @media (max-width: 890px){
@@ -3391,6 +3534,51 @@ hr {
         cursor: pointer;
         z-index: 1;
     }
+
+    .footerMobile{
+        border-radius: 15px;
+        width: 98%;
+        height: 80px;
+        visibility: visible;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--second-color);
+        z-index: 1;
+        text-align: center;
+     
+    }
+
+    .footerMobile a{
+        position: relative;
+        padding: 0 26px;
+        font-size: 50px;
+    }
+
+    .footerMobile a i{
+        color: var(--fifth-color);
+    }
+
+    .footerMobile a.active i {
+        color: var(--fourth-color);
+    }
+  
+    @keyframes neon-glow {
+        0%{
+            opacity: 0.8;
+            box-shadow: 0 0 5px var(--fourth-color), 0 0 20px var(--fourth-color);
+        }
+        100% {
+            opacity: 1;
+            box-shadow: 0 0 20px var(--fourth-color), 0 0 40px var(--fourth-color);;
+        }
+        
+    }
+
+
+
+
   }
 
   @media (max-width: 405px){

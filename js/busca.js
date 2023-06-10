@@ -41,8 +41,8 @@ const hadleEvent = async (event) => {
     const dados = await res.json();
 
     if(!dados.items || dados.items.length === 0){
-
-      //cria algo para iniforma que o resultado não foi encontrado
+      const resultadoPesquisa = document.querySelector('.resultadoPesquisa');
+      resultadoPesquisa.innerHTML = `<p>Nenhum resultado encontrado.<p>`;
 
     }else{
       if(location.href != 'https://deborah-andrade.github.io/BookBee.github.io/pagesearch.html'){
