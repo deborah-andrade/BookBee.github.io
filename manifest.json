@@ -1,7 +1,7 @@
 {
     "name": "BookBee",
     "short_name": "BookBee",
-    "start_url" : "/index.html",
+    "start_url" : "index.html",
     "display": "standalone",
     "background_color": "#F5F1F7",
     "theme_color": "#BB86FC",
