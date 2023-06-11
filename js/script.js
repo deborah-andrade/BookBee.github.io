@@ -139,6 +139,26 @@ document.querySelector("#descricaoLivro").textContent = formatarDescricao(livro.
 document.querySelector("#numPagina").textContent = livro.paginas;
 document.querySelector("#imgCapaLivro").setAttribute('src', livro.imagem);
 
+function abrirModal() {
+  var modal = document.getElementById("modalDescricaoLivro");
+  var descricaoLivro = document.getElementById("descricaoLivroM");
+  
+  let descricao = document.querySelector("#descricaoLivro").textContent;
+  descricaoLivro.textContent = descricao;
+  modal.style.display = "block";
+}
+
+function fecharModal() {
+  let modal = document.getElementById("modalDescricaoLivro");
+  
+  modal.style.display = "none";
+}
+
+let btn3 = document.getElementById("btn3");
+btn3.addEventListener("click", abrirModal());
+let closeBtn3 = document.getElementsByClassName("closeDetalhe")[0];
+closeBtn3.addEventListener("click", fecharModal());
+
 function adicionarClassificacaoEstrela() {
   const estrelas = document.querySelectorAll(".exibirClassificacao li i");
 

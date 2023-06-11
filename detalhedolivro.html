@@ -116,7 +116,7 @@
                     <div class="tituloAutorResumo">
                         <h2 id="tituloLivro"></h2>
                         <h4 id="autorLivro"></h4>
-                        <div id="descricaoLivro"></div>
+                        <div id="descricaoLivro"class="descricaoLivroP"></div>
 
                         <div class="exibirClassificacao">
                             <ul onmouseenter="adicionarClassificacaoEstrela()">
@@ -145,9 +145,13 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
             <div class="dataeAnotacoes">
+                <div class="descricaoLivroModal">
+                    <a id="btn3" href="#">Descrição do Livro</a>
+                    <i class="bi bi-plus-circle"></i>
+                </div>
+
                 <div class="datas">
                     <div class="dataInicio">
                         <label for="dataInicio">Data de Início</label>
@@ -215,6 +219,13 @@
                       <button id="salarModalNotas">Salvar</button>
                     </div>
                   </div>
+
+                  <div id="modalDescricaoLivro" class="modalDetalhes">
+                    <div class="modalContentDetalhes">
+                        <span class="closeDetalhe">&times;</span>
+                        <div id="descricaoLivroM"></div>
+                    </div>
+                </div>
                   
     </main>
 
