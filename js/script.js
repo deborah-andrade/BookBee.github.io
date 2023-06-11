@@ -115,6 +115,25 @@ btn2.onclick = abrirModal2;
 span1.onclick = fecharModal1;
 span2.onclick = fecharModal2;
 
+let modal = document.getElementById("modalDescricaoLivro");
+function fecharModal() {
+  
+  modal.style.display = "none";
+}
+
+function abrirModal() {
+  modal.style.display = "block";
+  const descricao = parametrosURL.get('descricao')
+  
+  let descricaoLivro = document.querySelector("#descricaoLivroM").textContent;
+  descricaoLivro.textContent = descricao;
+}
+
+let btn3 = document.getElementById("btn3");
+let closeBtn3 = document.getElementsByClassName("closeDetalhe")[0];
+btn3.addEventListener("click", abrirModal);
+closeBtn3.addEventListener("click", fecharModal);
+
 window.onclick = function(event) {
   if (event.target == modal1) {
     fecharModal1();
@@ -122,7 +141,11 @@ window.onclick = function(event) {
   if (event.target == modal2) {
     fecharModal2();
   }
+  if(event.target == modal){
+    fecharModal()
+  }
 }
+
 
 const livro ={
   id: parametrosURL.get('id'),
@@ -139,25 +162,9 @@ document.querySelector("#descricaoLivro").textContent = formatarDescricao(livro.
 document.querySelector("#numPagina").textContent = livro.paginas;
 document.querySelector("#imgCapaLivro").setAttribute('src', livro.imagem);
 
-function abrirModal() {
-  var modal = document.getElementById("modalDescricaoLivro");
-  var descricaoLivro = document.getElementById("descricaoLivroM");
-  
-  let descricao = document.querySelector("#descricaoLivro").textContent;
-  descricaoLivro.textContent = descricao;
-  modal.style.display = "block";
-}
 
-function fecharModal() {
-  let modal = document.getElementById("modalDescricaoLivro");
-  
-  modal.style.display = "none";
-}
 
-let btn3 = document.getElementById("btn3");
-btn3.addEventListener("click", abrirModal());
-let closeBtn3 = document.getElementsByClassName("closeDetalhe")[0];
-closeBtn3.addEventListener("click", fecharModal());
+
 
 function adicionarClassificacaoEstrela() {
   const estrelas = document.querySelectorAll(".exibirClassificacao li i");

@@ -3783,12 +3783,12 @@ hr {
         background-color: var(--second-color);
         margin: 15% auto;
         padding: 20px;
-        border: 1px solid #888;
+        border: 1px solid var(--third-color);
         width: 80%;
     }
     
     .closeDetalhe {
-        color: #aaa;
+        color: var(--third-color);
         float: right;
         font-size: 28px;
         font-weight: bold;
