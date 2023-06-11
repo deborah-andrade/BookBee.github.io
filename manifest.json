@@ -11,6 +11,12 @@
             "src": "imagens/icon.png",
             "sizes": "598x598",
             "type": "image/png"
+        },
+        {
+            "src": "imagens/icon.png",
+            "sizes": "598x598",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ]
 }
