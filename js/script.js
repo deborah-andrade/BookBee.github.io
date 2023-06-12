@@ -123,10 +123,10 @@ function fecharModal() {
 
 function abrirModal() {
   modal.style.display = "block";
-  const descricao = parametrosURL.get('descricao')
+  const descricaoM = parametrosURL.get('descricao')
   
-  let descricaoLivro = document.querySelector("#descricaoLivroM").textContent;
-  descricaoLivro.textContent = descricao;
+  let descricaoLivro = document.querySelector("#descricaoLivroM");
+  descricaoLivro.textContent = descricaoM;
 }
 
 let btn3 = document.getElementById("btn3");
