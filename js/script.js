@@ -115,14 +115,14 @@ btn2.onclick = abrirModal2;
 span1.onclick = fecharModal1;
 span2.onclick = fecharModal2;
 
-let modal = document.getElementById("modalDescricaoLivro");
+const modalDescricaoLivro = document.getElementById("modalDescricaoLivro");
 function fecharModal() {
   
-  modal.style.display = "none";
+  modalDescricaoLivro.style.display = "none";
 }
 
 function abrirModal() {
-  modal.style.display = "block";
+  modalDescricaoLivro.style.display = "block";
   const descricaoM = parametrosURL.get('descricao')
   
   let descricaoLivro = document.querySelector("#descricaoLivroM");
@@ -142,7 +142,7 @@ window.onclick = function(event) {
     fecharModal2();
   }
   if(event.target == modal){
-    fecharModal()
+    fecharModal();
   }
 }
 
