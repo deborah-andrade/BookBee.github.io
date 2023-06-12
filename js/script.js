@@ -158,13 +158,9 @@ const livro ={
 
 document.querySelector("#tituloLivro").textContent = livro.titulo;
 document.querySelector("#autorLivro").textContent = livro.autor;
-document.querySelector("#descricaoLivro").textContent = formatarDescricao(livro.descricao)
+document.querySelector("#descricaoLivro").textContent = formatarDescricao(livro.descricao);
 document.querySelector("#numPagina").textContent = livro.paginas;
 document.querySelector("#imgCapaLivro").setAttribute('src', livro.imagem);
-
-
-
-
 
 function adicionarClassificacaoEstrela() {
   const estrelas = document.querySelectorAll(".exibirClassificacao li i");
