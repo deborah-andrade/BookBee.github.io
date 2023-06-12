@@ -126,7 +126,7 @@ function abrirModal() {
   const descricaoM = parametrosURL.get('descricao')
   
   let descricaoLivro = document.querySelector("#descricaoLivroM");
-  descricaoLivro.textContent = descricaoM;
+  descricaoLivro.textContent = formatarDescricao(descricaoM);
 }
 
 let btn3 = document.getElementById("btn3");
